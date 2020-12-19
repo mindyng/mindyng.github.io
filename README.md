@@ -1,3 +1,3 @@
 # mindyng.github.io
 
-Showcasing problems I am passionate in tackling by going from messy raw data to business value/impact in lightning speed.
+Showcasing data analysis problems I am passionate about tackling. Going from raw data to business value in lighting speed via automation.
