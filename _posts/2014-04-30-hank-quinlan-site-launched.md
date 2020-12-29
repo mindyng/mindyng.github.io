@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Launches New Website"
+title: "Launching New Website"
 date: 2020-12-29
 ---
 
