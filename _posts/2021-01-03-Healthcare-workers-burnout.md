@@ -1,0 +1,1 @@
+It is clear that the Pandemic has had a toll on society, but what I have been studying closely is the weight it has had on healthcare workers. In this post, I share my motivation and approach with modeling burnout and creating a Flask app to serve my trained model.
