@@ -11,4 +11,4 @@ I am the underdog.
 1. Conquer tech assessment stage!
 1. Reach goals by having G R I T
 
-Checking this daily to calibrate as well as reviewing this in **362** days to see how I have progressed :grin:
+Checking this daily to calibrate as well as reviewing this in **362** days to see how I have progressed :D
