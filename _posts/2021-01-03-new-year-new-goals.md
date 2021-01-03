@@ -4,9 +4,9 @@ I am the underdog.
 
 # Here are my 2021 goals:
 
-1)Be Optimistic
-2)Have Vision
-3)Have Accountability (thanks, mentors!)
-4)Have Passion with What I Do
-5)Conquer tech assessment stage!
-6)Reach goals through with G R I T
+1. Be Optimistic
+1. Have Vision
+1. Have Accountability (thanks, mentors!)
+1. Have Passion with What I Do
+1. Conquer tech assessment stage!
+1. Reach goals through with G R I T
