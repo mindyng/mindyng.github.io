@@ -10,6 +10,6 @@ The model was assessed using an F1 score which is the metric of choice for imbal
 
 This initial exploration allowed me to see from real survey data what the numerical breakdown for burnout causes were and what has relieved anxiety/stress. Also, an intial baseline model was constructed which was a reminder to be attentive to class imbalance and appropriate metric to choose when comparing models.
 
-#Next step:
+# Next step:
 1. Scrape actual tweets from nurses, who according to survey data have been the hardest hit healthcare workers. And from their cries on Twitter, perform data analysis.
 1. Build a more accurate NLP classification model for burnout.
