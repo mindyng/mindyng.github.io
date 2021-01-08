@@ -1,0 +1,3 @@
+Came from DMV, USPS and EDD this morning and boy, the amount of apathy and cyncisim was easy to detect. It was all over. There were non-attentive, doing-just-as-told workers who talked down on you and others who looked like they seriously didn't want to be at their job. 
+This reminded me that government jobs-where protocols are the way of things. And that they are called to make sure people follow them or else. And this lacks heart. I was reminded from these few hours this morning why I want to work for a company where there is a fire-burning passion 
+inside of me to give the best I can offer to customers. Passion!
