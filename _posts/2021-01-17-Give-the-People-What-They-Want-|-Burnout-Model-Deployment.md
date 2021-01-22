@@ -6,4 +6,4 @@ The only issues I encountered during deployment was trying to find better animat
 
 Though upon testing the tool, I realized that the model was not predicting negative tweet at times when it should have. So I checked the deployed model performance metrics against the winning one (XGBoost with GloVe embeddings). Main difference in between the two were in total incorrect predictions (false positives and false negatives). Though I did few live checks and 6/10 times the predictions were accurate. If need be, XGBoost with GloVe embeddings would be next served up model.
 
-Though it was awesome to be able to have a model running in 7 blocks of code and 28-liner Python script.
+Though it was awesome to be able to have a model running in 7 blocks of code and 28-liner Python script. Horray! Healthcare workers now have a chance to get diagnosed with burnout quickly to sustain the healthcare workforce so that there are enough nurses to help those who are sick.
