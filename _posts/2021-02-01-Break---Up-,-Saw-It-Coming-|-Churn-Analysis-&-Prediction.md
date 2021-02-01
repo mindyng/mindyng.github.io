@@ -3,7 +3,7 @@ What is even better is to foresee red flags in order to corret course. There is 
 context then to have a machine examine any trends/outliers in those who are loyal (non-churn) versus those who eventually
 leave the product (churn).
 
-In my next project, I examined a fictitious music-streaming company, Sparkify's user data. I explored the data to see what
+In my next project, I [examined a fictitious music-streaming company, Sparkify's user data](https://www.kaggle.com/mindyng/churn-prediction/). I explored the data to see what
 differences between subscribers and non-subscribers as well as trends between those who stayed on the platform and those
 who eventually churnned.
 
