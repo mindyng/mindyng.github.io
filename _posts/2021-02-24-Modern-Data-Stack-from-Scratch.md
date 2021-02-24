@@ -21,9 +21,21 @@ choices. So there is the longitudinal aspect with the exception that the data is
 Data collected was from [MIT Election Data + Science Lab](https://electionlab.mit.edu/data). Specifically, got historical US
 elections results for the House of Representatives, the Senate and the Presidential Candidates in the Electoral College.
 
+# Applications
+
+1. [PostgreSQL](https://www.postgresql.org/download/) - SQL client
+2. [TablePlus](https://tableplus.com/) - GUI for SQL client
+3. [Python3](https://www.python.org/) - most components in the stack depend on this
+4. [Sublime](https://www.sublimetext.com/) - Scripts editor
+
 # Extraction and Load (Meltano)
 
+Started a vitual environment.
 
+  mkdir ds4fnp
+  cd ds4fnp                   
+  python3 -m venv .venv       # create your virtual environment
+  source .venv/bin/activate   # activate your virtual environment
 
 # Transformation 
 
