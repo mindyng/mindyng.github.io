@@ -7,7 +7,7 @@ from. So I made sure that in my next data project, I would figure out more Data 
 
 One set back was that I knew of the common platforms used in order to build data infrastructure-- Fivetran, Stitch, Snowflake.
 They were perfect for enterprise scale and budget, but not for someone who just wanted to run something local to get a foundation
-for DE. Enter PostgreSQL, Meltano (Singer + DBT) and Superset. They are free to use, can be run on a local machine and are used at 
+for DE. Enter PostgreSQL, Meltano (Singer), DBT and Superset. They are free to use, can be run on a local machine and are used at 
 the Enterprise scale as well. 
 
 # Data Source
@@ -21,7 +21,7 @@ choices. So there is the longitudinal aspect with the exception that the data is
 Data collected was from [MIT Election Data + Science Lab](https://electionlab.mit.edu/data). Specifically, got historical US
 elections results for the House of Representatives, the Senate and the Presidential Candidates in the Electoral College.
 
-# Applications
+# Applications Needed:
 
 1. [PostgreSQL](https://www.postgresql.org/download/) - SQL client
 2. [TablePlus](https://tableplus.com/) - GUI for SQL client
@@ -30,7 +30,7 @@ elections results for the House of Representatives, the Senate and the President
 
 # Extraction and Load (Meltano)
 
-Started a vitual environment.
+Created local project folder and starting a virtual environment.
 
 ```
 mkdir ds4fnp
@@ -38,6 +38,18 @@ cd ds4fnp
 python3 -m venv .venv       # create your virtual environment
 source .venv/bin/activate   # activate your virtual environment
 ```
+Meltano helps extract away all the custom python code needed when doing tradional ETL. What it does is pulls from data sources (taps) and puts into data load destinations (targets). 
+
+Installed Meltano and created a new project by:
+
+```
+pip3 install meltano
+meltano init ./meltano
+cd ./meltano
+```
+
+After initiating Meltano, there were several subdirectories created along with a meltano.yml file. This is where most of the Extraction and Loading work was done along with working with Meltano's CLI. For more information, this is [Meltano's documentation](https://meltano.com/docs/project.html#projects) to understand how configuration files work. 
+
 
 # Transformation 
 
