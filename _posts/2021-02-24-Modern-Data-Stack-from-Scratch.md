@@ -50,6 +50,22 @@ cd ./meltano
 
 After initiating Meltano, there were several subdirectories created along with a meltano.yml file. This is where most of the Extraction and Loading work was done along with working with Meltano's CLI. For more information, this is [Meltano's documentation](https://meltano.com/docs/project.html#projects) to understand how configuration files work. 
 
+## Configuring Sources for Extraction
+
+We will be using plugin called [tap-spreadsheets-anywhere](https://meltano.com/plugins/extractors/spreadsheets-anywhere.html#getting-started). It is able to pull data from CSV files and Excel spreadsheets on cloud and local storage. Ran the following command in meltano CLI to add extractor to my meltano project:
+
+```
+meltano add extractor tap-spreadsheets-anywhere
+```
+When this was completed, config section was added to meltano.yml. Then added manually into the [file](https://github.com/mindyng/2021-Projects/blob/main/modern_data_stack/meltano/meltano.yml) nested items under tables. URL's were added to 3 different datasets from the MIT site:
+
+* https://dataverse.harvard.edu/api/access/datafile/4202836
+* https://dataverse.harvard.edu/api/access/datafile/4300300
+* https://dataverse.harvard.edu/api/access/datafile/4299753
+
+## Configuring Targets for Loading
+
+
 
 # Transformation 
 
