@@ -32,10 +32,10 @@ elections results for the House of Representatives, the Senate and the President
 
 Started a vitual environment.
 
-  mkdir ds4fnp
-  cd ds4fnp                   
-  python3 -m venv .venv       # create your virtual environment
-  source .venv/bin/activate   # activate your virtual environment
+[mkdir ds4fnp
+cd ds4fnp                   
+python3 -m venv .venv       # create your virtual environment
+source .venv/bin/activate   # activate your virtual environment](url)
 
 # Transformation 
 
