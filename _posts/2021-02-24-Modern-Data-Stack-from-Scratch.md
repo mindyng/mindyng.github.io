@@ -136,7 +136,19 @@ The dbt_project.yml is almost exactly like the original, except for name of proj
 
 ## Defining Sources and Staging Tables
 
+Staging tables are needed because sometimes we want to use the same tables in different data models. In order to prevent repeat transformations staging models are created.
 
+Had to make a new folder under models: models/staging in order to define another [schema.yml](https://github.com/mindyng/2021-Projects/blob/main/modern_data_stack/dbt/models/staging/schema.yml) and [staging tables](https://github.com/mindyng/2021-Projects/tree/main/modern_data_stack/dbt/models/staging). 
+The first part of the staging schema file was to define our sources and at the bottom were where the staging models were defined.  For each model, there was a name, which corresponded to a .sql file in the same folder. So in our case, there were 3 separate .sql files along with the schema.yml file.
+
+For each staging table, selected columns are pulled from source tables and transformations are performed.
+
+Then [elections](https://github.com/mindyng/2021-Projects/tree/main/modern_data_stack/dbt/models/elections) tables were created for future analyses and Superset analysis. They are located in models/elections with its own schema.yml. Main difference in these table .sql files is that after the main FROM is: 'ref' and not 'source' as was the case when staging tables were defined. Also, election tables have aggregation versus data formatting.
+
+Then all that is left is to run this in the CLI:
+```
+dbt run
+```
 
 # Visualization
 
