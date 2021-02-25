@@ -149,8 +149,64 @@ Then all that is left is to run this in the CLI:
 ```
 dbt run
 ```
+Documents served by running the following commands:
+
+```
+dbt docs generate
+dbt docs serve
+```
+
+This generated data warehouse's documentation and spun up temporary webserver for viewing. On the left side bar, could view all the different data models from raw to source to transformed. What was really cool was that I viewed lineage graph of tables' evolution from source by pressing turquoise icon on bottom right of page. This and documentation are highly valuable when projects get complex really fast.
 
 # Visualization
 
-In the end, was able to build a data warehouse (PostgreSQL), extract and load data in to the warehouse (Meltano) and create
-visualizations to present insights as a dashboard (Superset). 
+With any analytics project, will have some sort of BI layer with interactive data visualizations. And usually these viz will be updated as fresh data comes in. So we could eventually modify our data connection to time when ballot counting is happening. 
+
+At the terminal, needed to run quite a few commands to make sure xcode and homebrew were installed, pip and setup tools are updated. Afterwards, installed [Superset](https://superset.apache.org/docs/intro) and created admin user and set bunch of defaults.
+
+```
+xcode-select --install
+pip install --upgrade setuptools pip
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
+pip3 install apache-superset 
+superset db upgrade 
+superset fab create-admin 
+superset init
+superset run -p 8088 --with-threads --reload --debugger
+```
+At this point, a running instance of Superset was up. Logged in with my user name and password. Then from there had to do what was familiar given my Tableau experience:
+
+1. Add data source
+1. Add tables
+1. Create charts
+1. Create dashboard
+
+## Configuring data source:
+
+Just had to connect to data warehouse as data source by going to Data/Databases. Then under CONNECTION, put in ds4fnp for DATABASE NAME and this for SQLALCHEMY NAME:
+
+```
+postgresql+psycopg2://ds4fnp:ds4fnp@localhost:5432/ds4fnp
+```
+After data source was added, really cool feature called 'SQL Lab" where you can do some Exploratory Data Analysis (EDA) and quick ad-hoc analyses to aid development in Meletano and dbt.
+
+Second, tables were added by going to Data/Datasets and clicked on +DATASET. I ended up selecting all models-staging and transformed ones.
+
+Third, simple starter charts were created in order to get a feel for how aggregated votes were over time for Senate, House and Presidential elections. Did all this by:
+
+1. Under Charts: + CHART
+2. Selected a dataset: public_elections.us_house_party_seats and chose a visualization type: 'Area Chart'
+4. When defining x- and y-axes chose year for x-axis with time grain
+5. Time range set to 'No Filter'
+6. Under metrics, selected seats with SUM as aggregate (got rid of COUNT() default)
+7. Chose to group by: party
+8. Set title
+9. Changed color scheme to “Google Category 10c” (under Customize)
+
+Did this for all 3 models: House of Representatives, Senate and Presidential elections.
+
+Lastly, to create a Dashboard, went to CHARTS (next to COMPONENTS) and added charts to plain canvas. Result was in one view: House, Senate and Presidential results all grouped by Party. Last thing remaining was to add a title and save.
+
+Of course, this was just the beginning. There is so much [more you can do](https://docs.preset.io/v1/docs/en/about-dashboards)! :) 
+
+In the end, was able to build a data warehouse (PostgreSQL), extract and load data in to the warehouse (Meltano) and create visualizations to present insights as a dashboard (Superset). 
