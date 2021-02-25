@@ -65,7 +65,19 @@ When this was completed, config section was added to meltano.yml. Then added man
 
 ## Configuring Targets for Loading
 
+Singer target/destination was specified for CSV files to be loaded into PostgreSQL database. 
 
+PostgreSQL database and persmissions created using psql (CLI):
+
+```
+#via initial user login as postgres with pw 'postgres' using command: sudo -u postgres psql
+
+create database ds4fnp;
+\connect ds4fnp;
+create role ds4fnp with login password 'ds4fnp';
+grant all privileges on database ds4fnp to ds4fnp;
+
+```
 
 # Transformation 
 
