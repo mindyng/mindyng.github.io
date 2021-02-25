@@ -113,7 +113,30 @@ With "raw" data, there comes the need of transformation. Rawness means uncertain
 
 Though changes will be made, original raw form will be saved for historical/auditing purposes. This is referred to as preserving **provenance** of the data. 
 
-**[dbt](https://docs.getdbt.com/docs/introduction)** stands for "data build tool". 
+**[dbt](https://docs.getdbt.com/docs/introduction)** stands for "data build tool". It helped define and manage analytic workflows. Raw data was transformed using this. 
+
+Using dbt CLI:
+
+```
+pip3 install dbt
+dbt init dbt
+cd dbt
+```
+A new dbt project was created with configuration folder (.dbt) with [profiles.yml](https://github.com/mindyng/2021-Projects/blob/main/modern_data_stack/dbt/profiles.yml) in it. This file told dbt how to connect to the database. 
+
+Within the dbt project folder is dbt_project.yml file, README.md as well as a bunch of folders meant to store different forms of the raw data as well as documentation.
+
+While working with dbt project, usually working with 3 main files:
+
+* [dbt_project.yml](https://github.com/mindyng/2021-Projects/blob/main/modern_data_stack/dbt/dbt_project.yml)
+* schema.yml
+* .sql
+
+The dbt_project.yml is almost exactly like the original, except for name of project, profile and models section. Under the models block, two different schemas defined: staging and elections. Staging were references to original data and elections will have the transformation models used downstream.
+
+## Defining Sources and Staging Tables
+
+
 
 # Visualization
 
