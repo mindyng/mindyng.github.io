@@ -91,8 +91,29 @@ then ran to add loader as PostgreSQL database:
 ```
 meltano add loader target-postgres --variant meltano
 ```
+This added loaders section in meltano.yml file. Able to see particular target specified (ds4fnp PostgreSQL database).
+
+With both tap and target set, able to define and run pipeline. 
+
+```
+meltano elt tap-spreadsheets-anywhere target-postgres
+```
+At this point, could see in TablePlus three new tables loaded in database with path: 
+
+ds4fnp.tap_spreadsheets_anywhere.mit__house_elections
 
 # Transformation 
+
+With "raw" data, there comes the need of transformation. Rawness means uncertain quality of data which we want to make into more immediately useful products. Initial transformations that interested me:
+
+* consistent capitalization
+* consistent with name formats (Lastname, Firstname vice versa, but keep it the same throughout)
+* not including metadata fields that were irrelevant for analysis
+* aggregated data since raw data came in with low level of granularity
+
+Though changes will be made, original raw form will be saved for historical/auditing purposes. This is referred to as preserving **provenance** of the data. 
+
+**[dbt](https://docs.getdbt.com/docs/introduction)** stands for "data build tool". 
 
 # Visualization
 
