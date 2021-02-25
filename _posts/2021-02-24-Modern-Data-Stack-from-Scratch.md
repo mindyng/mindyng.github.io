@@ -76,7 +76,20 @@ create database ds4fnp;
 \connect ds4fnp;
 create role ds4fnp with login password 'ds4fnp';
 grant all privileges on database ds4fnp to ds4fnp;
+```
+Once this is complete, made sure that meltano.yml script changed under config:
 
+config:
+      user: ds4fnp
+      password: "ds4fnp"
+      host: 127.0.0.1
+      port: 5432
+      dbname: ds4fnp
+      
+then ran to add loader as PostgreSQL database: 
+
+```
+meltano add loader target-postgres --variant meltano
 ```
 
 # Transformation 
