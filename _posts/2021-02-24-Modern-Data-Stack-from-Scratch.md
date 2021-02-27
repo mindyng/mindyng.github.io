@@ -99,10 +99,11 @@ With both tap and target set, able to define and run pipeline.
 meltano elt tap-spreadsheets-anywhere target-postgres
 ```
 At this point, could see in TablePlus three new tables loaded in database with path: 
-
+```
 ds4fnp.tap_spreadsheets_anywhere.mit__house_elections
+```
 
-![test](https://github.com/mindyng/mindyng.github.io/blob/master/_posts/postgres.png)
+![postgreSQL](https://github.com/mindyng/mindyng.github.io/blob/master/_posts/postgres.png)
 
 # Transformation 
 
