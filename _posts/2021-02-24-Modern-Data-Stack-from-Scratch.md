@@ -103,7 +103,7 @@ At this point, could see in TablePlus three new tables loaded in database with p
 ds4fnp.tap_spreadsheets_anywhere.mit__house_elections
 ```
 
-![postgreSQL](https://github.com/mindyng/mindyng.github.io/blob/master/_posts/postgres.png)
+![postgreSQL](postgres.png)
 
 # Transformation 
 
@@ -211,6 +211,8 @@ Third, simple starter charts were created in order to get a feel for how aggrega
 Did this for all 3 models: House of Representatives, Senate and Presidential elections.
 
 Lastly, to create a Dashboard, went to CHARTS (next to COMPONENTS) and added charts to plain canvas. Result was in one view: House, Senate and Presidential results all grouped by Party. Last things remaining were to add a title and save.
+
+![superset](superset.png)
 
 Of course, this was just the beginning. There is so much [more you can do](https://docs.preset.io/v1/docs/en/about-dashboards)! :) 
 
