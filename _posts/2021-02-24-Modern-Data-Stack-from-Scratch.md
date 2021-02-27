@@ -102,6 +102,8 @@ At this point, could see in TablePlus three new tables loaded in database with p
 
 ds4fnp.tap_spreadsheets_anywhere.mit__house_elections
 
+![test](https://github.com/mindyng/mindyng.github.io/blob/master/_posts/postgres.png)
+
 # Transformation 
 
 With "raw" data, there comes the need for transformation. Rawness means uncertain quality of data which we want to make into more immediately useful products. Initial transformations that interested me:
