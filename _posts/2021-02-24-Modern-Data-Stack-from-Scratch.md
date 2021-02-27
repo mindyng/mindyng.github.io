@@ -161,6 +161,8 @@ dbt docs serve
 
 This generated data warehouse's documentation and spun up temporary webserver for viewing. On the left side bar, could view all the different data models from raw to source to transformed. What was really cool was that I viewed a lineage graph of tables' evolution from source by pressing turquoise icon on bottom right of page. This and documentation are highly valuable when projects get complex. And that can happen really quickly.
 
+![dbt](dbt.png)
+
 # Visualization
 
 With any analytics project, will have some sort of BI layer with interactive data visualizations. And usually these viz will be updated as fresh data comes in. So we could eventually modify our data connection to time when ballot counting is happening. 
