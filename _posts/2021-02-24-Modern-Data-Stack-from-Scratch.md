@@ -14,8 +14,8 @@ the Enterprise scale as well.
 
 Given that the data stack chosen to be built was meant to perform just like an Enterprise-level data stack, I wanted to go after data
 that was similar to what big companies deal with. So thought about continuous data that was dynamic and relevant. Hence, chose
-election data that gets updated continuously. This simulates user data that would stream into warehouses continuously/
-regularly scheduled workflows that would collect records of users' fluctuating behaviors. This was similar to people's voting 
+election data that gets updated continuously. This simulates user data that would stream into warehouses continuously/regularly scheduled 
+workflows that would collect records of users' fluctuating behaviors. This was similar to people's voting 
 choices. So there was the longitudinal aspect with the exception that the data was not in real-time. 
 
 Data collected was from [MIT Election Data + Science Lab](https://electionlab.mit.edu/data). Specifically, got historical U.S.
@@ -38,7 +38,7 @@ cd ds4fnp
 python3 -m venv .venv       # create your virtual environment
 source .venv/bin/activate   # activate your virtual environment
 ```
-Meltano helps extract away all the custom Python code needed when doing tradional ETL. What it does is pulls from data sources (taps) and puts data into data load destinations (targets). 
+Meltano helps extract away all the custom Python code needed when doing traditional ETL. What it does is pulls from data sources (taps) and puts data into data load destinations (targets). 
 
 Installed Meltano and created a new project by:
 
