@@ -7,7 +7,7 @@ from. So I made sure that in my next data project, I would figure out more Data 
 
 One set back was that I knew of the common platforms used in order to build data infrastructure-- Fivetran, Stitch, Snowflake.
 They were perfect for enterprise scale and budget, but not for someone who just wanted to run something local to get a foundation
-for DE. Enter PostgreSQL, Meltano (Singer), DBT and Superset. They are free to use, can be run on a local machine and can be used at 
+for DE. Enter Meltano (Singer), PostgreSQL, dbt and Superset. They are free to use, can be run on a local machine and can be used at 
 the Enterprise scale as well. 
 
 # Data Source
