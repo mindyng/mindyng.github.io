@@ -1,5 +1,5 @@
 Break-up's are hard. Though there are lessons from any fall out. You take stock of what went wrong/what can be done better the next go around.
-What is even better is to foresee red flags in order to corret course. There is no better way to do this in the business
+What is even better is to foresee red flags in order to correct course. There is no better way to do this in the business
 context then to have a machine examine any trends/outliers in those who are loyal (non-churn) versus those who eventually
 leave the product (churn).
 
