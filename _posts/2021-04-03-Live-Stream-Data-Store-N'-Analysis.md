@@ -7,4 +7,4 @@ to launch its own e-vehicle, what would be public's initial response to that. Ma
 on Twitter. 
 
 In this project, I was able to steam fresh tweets into Postgres database using Tweepy's StreamListener. Instead of a new product launch, I filtered the whole world's
-tweets on: ** 'vaccine', 'vax', 'Pfizer', 'Moderna', 'Johnson & Johnson' ** because who else is not curious about the vaccine against COVID-19?
+tweets on: 'vaccine', 'vax', 'Pfizer', 'Moderna', 'Johnson & Johnson' because who else is not curious about the vaccine against COVID-19?
