@@ -1,7 +1,7 @@
 My last DE project was an intro into how to sequester my own data. Though it was cool to understand the whole data pipeline from ingestion, to transformation to 
 analysis, data was static and getting stagnant pretty quickly.
 
-This project's aim was to sequester live streaming data since real-time data gives you access to fresh, current activity. This is highly valuable because it gives 
+This [project's](https://github.com/mindyng/2021-Projects/blob/main/Data_Stream_To_DB_Text_Analysis.ipynb) aim was to sequester live streaming data since real-time data gives you access to fresh, current activity. This is highly valuable because it gives 
 you insight on current customers/public's responses to what is out there in the world. Business use case would be if there is a product launch, such as Apple decided 
 to launch its own e-vehicle, what would be public's initial response to that. Marketing/Sales team can gauge market potential/fit by tracking and trending responses
 on Twitter. 
