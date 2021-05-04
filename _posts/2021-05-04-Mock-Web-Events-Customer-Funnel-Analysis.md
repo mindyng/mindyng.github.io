@@ -34,4 +34,9 @@ dbt docs serve
 ```
 ![DAG](DAG.png)
 
-Finally, I was able to use the metadata to Tableau and create a dashboard showing hourly pageviews as well as the most hits per page. And as expected, there is an hourly cyclical trend as well as huge hits concentrated in home, product A and product B pages. Thus, being able to track customer behavior allows us to closely monitor whether or not business is successful at providing solution to customers at a granular level. 
+Finally, I was able to use the metadata to Tableau and create a dashboard showing hourly pageviews as well as the most hits per page. 
+
+![tableau](tableau.png)
+
+
+And as expected, there is an hourly cyclical trend as well as huge hits concentrated in home, product A and product B pages. Thus, being able to track customer behavior allows us to closely monitor whether or not business is successful at providing solution to customers at a granular level. 
