@@ -1,6 +1,8 @@
 I have been wanting to explore streamed events post-ingestion. Tracking a customer's user behavior in real-time is extremely valuable because it allows you to see 
 instant reponse to a new product feature or even intervene immediately when you see a customer possibly churn.
 
+![sitemap](sitemap.png)
+
 Though this is the standard data that comes into a company's system, testing a data pipeline's transformation and BI layer does not need code committed to 
 Production. This is where mock event data comes in. In order to create some, I knew I had to find some online or create some on my own. And I ended up bumping into
 this wonderful [post](https://towardsdatascience.com/simulating-web-events-7199bf8afcfd). 
@@ -12,4 +14,24 @@ Here is a sample event:
 ![event](fake_event.png)
 
 And in order to load the data into my local Postgres database, sqlalchemy library was called. What it did was help
-create the structure in order to load and store the mock data. It helped create the table, column and data types. Script is [here](https://github.com/mindyng/2021-Projects/blob/main/events_to_postgres.py). From here, after connecting to database and creating mock data, events were loaded into postgres database.
+create the structure in order to load and store the mock data. It helped create the table, column and data types. Script is [here](https://github.com/mindyng/2021-Projects/blob/main/events_to_postgres%20copy.py). From here, after connecting to database and creating mock data, events were loaded into postgres database.
+
+From here, I wanted to see if I could create different business logic models using dbt. So I created my virtual env, created my dbt folder, initiated by dbt project, wrote my SQL queries and built the tables out to do business intelligence on. The follow is: 
+
+my projects.yml file: 
+
+![profiles](profiles.png)
+
+dbt_project.yml file:
+
+![dbt_project](dbt_project.png)
+
+and my DAG/Lineage Graph from running:
+
+``` 
+dbt run docs
+dbt docs serve
+```
+![DAG](DAG.png)
+
+Finally, I was able to use the metadata to Tableau and create a dashboard showing hourly pageviews as well as the most hits per page. And as expected, there is an hourly cyclical trend as well as huge hits concentrated in home, product A and product B pages. Thus, being able to track customer behavior allows us to closely monitor whether or not business is successful at providing solution to customers at a granular level. 
