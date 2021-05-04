@@ -12,4 +12,4 @@ Here is a sample event:
 ![event](fake_event.png)
 
 And in order to load the data into my local Postgres database, sqlalchemy library was called. What it did was help
-create the structure in order to load and store the mock data. It helped create the table, column and data types. Script is [here](). From here, after connecting to database and creating mock data, events were loaded into postgres database.
+create the structure in order to load and store the mock data. It helped create the table, column and data types. Script is [here](https://github.com/mindyng/2021-Projects/blob/main/events_to_postgres.py). From here, after connecting to database and creating mock data, events were loaded into postgres database.
