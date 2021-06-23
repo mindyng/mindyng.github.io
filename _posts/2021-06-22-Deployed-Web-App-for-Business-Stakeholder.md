@@ -58,12 +58,14 @@ of summarized data. I wanted to produce 4 different visualizations to help answe
 The first two graphs had some more interactive buttons in order to condense the time axis to day, month and 6 month level of data. Also, there was a range slider
 in order to segment of window of time for viewing.
 
-# [Web Application Development](https://nbviewer.jupyter.org/github/mindyng/2021-Projects/blob/main/fluence_digital/fluence-digital-app-and-deployment.ipynb) and [Deployment](https://nbviewer.jupyter.org/github/mindyng/2021-Projects/blob/main/fluence_digital/fluence-digital-app-and-deployment.ipynb)
+# [Web Application Development](https://github.com/mindyng/2021-Projects/blob/main/fluence_digital/fluence_digital_biz_viz.py) and [Deployment](https://nbviewer.jupyter.org/github/mindyng/2021-Projects/blob/main/fluence_digital/fluence-digital-app-and-deployment.ipynb)
 
 The last step was to create a web application that could be deployed so the business stakeholder could get a link to interact with graphs, see data and read the data 
 story to understand how the analytic conclusion was made. And this would add to their own take on the data and tell a story of their own. In order to develop my web app,
 it was between Plotly Dash and Heroku or Plotly graphs and Streamlit. I went with the second option because I was already familiar with Streamlit and it has a 
 huge number of Github contributors. So app development was straight forward and code was light.
+
+https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov
 
 For deployment, that was even simpler because all I had to do was request an invite to Streamlit Sharing capabilities. Then all I had to do was provide my Github repo 
 that included my app Python script and requirements.txt to specify packages needed to build the app and everything else was done by Streamlit. And within a minute
