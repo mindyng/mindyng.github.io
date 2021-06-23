@@ -46,7 +46,7 @@ loaded these tables back into the Snowflake warehouse using SQLAlchemy's library
 
 # [Business Intelligence Visualization](https://www.kaggle.com/mindyng/fluence-digital-biz-viz)
 
-In order to provide business stakeholder with interactive visualizations, I decided to go with the Plotly library since it has built-in interactivity. You can hover over
+In order to provide business stakeholder with interactive visualizations, I decided to go with the [Plotly](https://plotly.com/graphing-libraries/) library since it has built-in interactivity. You can hover over
 graphs for details, pan in and out, look at multiple hovers at once, etc. It allows the user to look at different angles of the data from one graph versus multiple snapshots 
 of summarized data. I wanted to produce 4 different visualizations to help answer the business question: 
 
@@ -62,12 +62,12 @@ in order to segment of window of time for viewing.
 
 The last step was to create a web application that could be deployed so the business stakeholder could get a link to interact with graphs, see data and read the data 
 story to understand how the analytic conclusion was made. And this would add to their own take on the data and tell a story of their own. In order to develop my web app,
-it was between Plotly Dash and Heroku or Plotly graphs and Streamlit. I went with the second option because I was already familiar with Streamlit and it has a 
+it was between Plotly Dash and Heroku or Plotly graphs and [Streamlit](https://streamlit.io/). I went with the second option because I was already familiar with Streamlit and it has a 
 huge number of Github contributors. So app development was straight forward and code was light.
 
 https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov
 
-For deployment, that was even simpler because all I had to do was request an invite to Streamlit Sharing capabilities. Then all I had to do was provide my Github repo 
+For deployment, that was even simpler because all I had to do was request an invite to [Streamlit Sharing](https://share.streamlit.io/) capabilities. Then all I had to do was provide my Github repo 
 that included my app Python script and requirements.txt to specify packages needed to build the app and everything else was done by Streamlit. And within a minute
 or two my app was deployed on the web with a URL I shared with my business stakeholder.
 
