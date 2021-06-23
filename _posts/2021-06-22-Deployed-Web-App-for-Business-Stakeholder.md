@@ -58,14 +58,14 @@ of summarized data. I wanted to produce 4 different visualizations to help answe
 The first two graphs had some more interactive buttons in order to condense the time axis to day, month and 6 month level of data. Also, there was a range slider
 in order to segment of window of time for viewing.
 
-# Web Application Development and Deployment
+# [Web Application Development](https://nbviewer.jupyter.org/github/mindyng/2021-Projects/blob/main/fluence_digital/fluence-digital-app-and-deployment.ipynb) and [Deployment](https://nbviewer.jupyter.org/github/mindyng/2021-Projects/blob/main/fluence_digital/fluence-digital-app-and-deployment.ipynb)
 
-The last step was to [create a web application](https://www.kaggle.com/mindyng/fluence-digital-app-and-deployment/) that could be deployed so the business stakeholder could get a link to interact with graphs, see data and read the data 
+The last step was to create a web application that could be deployed so the business stakeholder could get a link to interact with graphs, see data and read the data 
 story to understand how the analytic conclusion was made. And this would add to their own take on the data and tell a story of their own. In order to develop my web app,
 it was between Plotly Dash and Heroku or Plotly graphs and Streamlit. I went with the second option because I was already familiar with Streamlit and it has a 
 huge number of Github contributors. So app development was straight forward and code was light.
 
-For [deployment](https://share.streamlit.io/mindyng/2021-projects/main/fluence_digital/streamlit_deploy.py), that was even simpler because all I had to do was request an invite to Streamlit Sharing capabilities. Then all I had to do was provide my Github repo 
+For deployment, that was even simpler because all I had to do was request an invite to Streamlit Sharing capabilities. Then all I had to do was provide my Github repo 
 that included my app Python script and requirements.txt to specify packages needed to build the app and everything else was done by Streamlit. And within a minute
 or two my app was deployed on the web with a URL I shared with my business stakeholder.
 
