@@ -10,7 +10,7 @@ A business stakeholder from Fluence would probably ask something on the lines of
 given a year's worth of data on the actual price of energy ($/kWh), Fluence's predictions and Market Operators' predictions to answer the question. And everything had 
 to be done in Python/SQL. The final deliverable would be a deployed web app with a link given to the stakeholder to see my analytic conclusion.
 
-# [Extraction, Transformation and Load (ETL)](https://www.kaggle.com/mindyng/fluence-digital-etl)
+# [Extraction, Transformation and Load (ETL)](https://nbviewer.jupyter.org/github/mindyng/2021-Projects/blob/main/fluence_digital/fluence-digital-etl.ipynb)
 
 My data was stored in a Snowflake instance. 
 
