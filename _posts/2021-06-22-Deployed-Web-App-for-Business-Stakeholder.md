@@ -18,11 +18,11 @@ My data was stored in a Snowflake instance.
 
 ## Extraction
 
-The tables had in common settlement_time and p50 prediction columns. I joined all tables on settlement_time using SQL which was written in [Kaggle]('https://www.kaggle.com/') 
+The tables had in common settlement_time and p50 prediction columns. I joined all tables on settlement_time using SQL which was written in [Kaggle](https://www.kaggle.com/) 
 Notebooks, cloud computational environments that enables reproducible and collaborative analysis. I prefer using these notebooks since I can write Python and use
 Kaggle's reliable computational power. I usually don't get Python package conflicts while using it and notebooks are pre-loaded with all data science libraries.
 In order to pull the data programmatically from Snowflake environment into a Python one, there were three options: a custom Python script, Snowflake's Python Connector
-or SQLAlchemy. I ended up using [SQLAlchemy]('https://pypi.org/project/SQLAlchemy/') Python library because it required few lines of code to complete job I needed and produced no 
+or SQLAlchemy. I ended up using [SQLAlchemy](https://pypi.org/project/SQLAlchemy/) Python library because it required few lines of code to complete job I needed and produced no 
 run errors upon execution. SQLAlchemy provides snowflake data table to be transformed into a Python object. In particular, the desired output would be a Pandas dataframe. This would allow 
 transformations to the joined tables. 
 
