@@ -69,7 +69,7 @@ For [deployment](https://share.streamlit.io/mindyng/2021-projects/main/fluence_d
 that included my app Python script and requirements.txt to specify packages needed to build the app and everything else was done by Streamlit. And within a minute
 or two my app was deployed on the web with a URL I shared with my business stakeholder.
 
-![deployedapp](Screen Recording 2021-06-21 at 6.49.31 PM.mov)
+![deployedapp](deployedapp.mov)
 
 # Conclusion
 
