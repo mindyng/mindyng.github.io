@@ -67,7 +67,7 @@ the choices were Plotly Dash and Heroku or Plotly graphs and [Streamlit](https:/
 huge number of Github contributors. So app development was straight forward and code was light.
 
 For deployment, that was even simpler because all I had to do was request an invite for [Streamlit Sharing](https://share.streamlit.io/) capabilities. Then all I had to do was provide the Github repo to point to.
-The repo included my web app Python script and a requirements.txt to specify packages needed to build the app and everything else was spun up by Streamlit. And within a few minutes my app was deployed on the web with a URL I shared with my business stakeholder.
+The repo included my web app Python script and a requirements.txt to specify packages needed to build the app and everything else was spun up by Streamlit. And within a few minutes my app was deployed on the web with a URL I shared with my business stakeholder. Get a quick preview below or even better: check it out yourself [here](https://share.streamlit.io/mindyng/2021-projects/main/fluence_digital/streamlit_deploy.py)!
 
 https://user-images.githubusercontent.com/12889138/123044053-06653b80-d3ae-11eb-8ea1-8d5ed3a1f0e2.mov
 
