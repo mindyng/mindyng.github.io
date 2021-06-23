@@ -44,7 +44,7 @@ I decided to calculate the difference columns. Last two tables made were daily a
 After creating the metrics table and updating the base data model with prediction differences from actual price values and aggregated versions of that table, I 
 loaded these tables back into the Snowflake warehouse using SQLAlchemy's library again. 
 
-# [Business Intelligence Visualization](https://www.kaggle.com/mindyng/fluence-digital-biz-viz)
+# [Business Intelligence Visualization](https://github.com/mindyng/2021-Projects/blob/main/fluence_digital/fluence_digital_biz_viz.py)
 
 In order to provide business stakeholder with interactive visualizations, I decided to go with the [Plotly](https://plotly.com/graphing-libraries/) library since it has built-in interactivity. You can hover over
 graphs for details, pan in and out, look at multiple hovers at once, etc. It allows the user to look at different angles of the data from one graph versus multiple snapshots 
@@ -58,14 +58,14 @@ of summarized data. I wanted to produce 4 different visualizations to help answe
 The first two graphs had some more interactive buttons in order to condense the time axis to day, month and 6 month level of data. Also, there was a range slider
 in order to segment of window of time for viewing.
 
-# [Web Application Development](https://github.com/mindyng/2021-Projects/blob/main/fluence_digital/fluence_digital_biz_viz.py) and [Deployment](https://nbviewer.jupyter.org/github/mindyng/2021-Projects/blob/main/fluence_digital/fluence-digital-app-and-deployment.ipynb)
+https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov
+
+# [Web Application Development](https://github.com/mindyng/2021-Projects/blob/main/fluence_digital/deploy%20copy.py) and Deployment
 
 The last step was to create a web application that could be deployed so the business stakeholder could get a link to interact with graphs, see data and read the data 
 story to understand how the analytic conclusion was made. And this would add to their own take on the data and tell a story of their own. In order to develop my web app,
 it was between Plotly Dash and Heroku or Plotly graphs and [Streamlit](https://streamlit.io/). I went with the second option because I was already familiar with Streamlit and it has a 
 huge number of Github contributors. So app development was straight forward and code was light.
-
-https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov
 
 For deployment, that was even simpler because all I had to do was request an invite to [Streamlit Sharing](https://share.streamlit.io/) capabilities. Then all I had to do was provide my Github repo 
 that included my app Python script and requirements.txt to specify packages needed to build the app and everything else was done by Streamlit. And within a minute
