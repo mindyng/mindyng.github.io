@@ -69,8 +69,6 @@ For [deployment](https://share.streamlit.io/mindyng/2021-projects/main/fluence_d
 that included my app Python script and requirements.txt to specify packages needed to build the app and everything else was done by Streamlit. And within a minute
 or two my app was deployed on the web with a URL I shared with my business stakeholder.
 
-![deployedapp](deployedapp.mov)
-
 https://user-images.githubusercontent.com/12889138/123044053-06653b80-d3ae-11eb-8ea1-8d5ed3a1f0e2.mov
 
 # Conclusion
