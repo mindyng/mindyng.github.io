@@ -71,6 +71,8 @@ or two my app was deployed on the web with a URL I shared with my business stake
 
 ![deployedapp](deployedapp.mov)
 
+https://user-images.githubusercontent.com/12889138/123044053-06653b80-d3ae-11eb-8ea1-8d5ed3a1f0e2.mov
+
 # Conclusion
 
 The metrics table showed the predictions with the lowest RMSE and MAE was Fluence's forecast. And visualizations showed that Fluence's difference from actual 
@@ -80,4 +82,3 @@ Fluence forecasts were better!
 Some concluding thoughts on implementation, good to have multiple options when implementing whether it be for the ETL, visualization or development and delployment 
 step. The best tools to answer the business stakeholders best were the tools I chose. At the same time, in a business context, especially at a start-up, when
 you need to factor in maintainability and time to deliver, the best solution may be second best. However, the job got done!
-
