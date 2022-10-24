@@ -20,8 +20,10 @@ Following the economic principle: as price goes down demand increases and vice v
 
 https://nbviewer.org/github/mindyng/2022-Business-Projects/blob/main/price-elasticity.ipynb
 
+
 # Recommendation: 
 
+Keep selling fitness trackers in India. Though looks like Apple, FOSSIL, FitBit and Huawei need to work on their high-end products' quality to prevent churn.
 
 
 # Conclusion:
