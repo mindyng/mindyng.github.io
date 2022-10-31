@@ -8,6 +8,11 @@ Price elasticity is traditionally how much change in price results in how much c
 Following the economic principle: as price goes down demand increases and vice versa.
 
 
+# Metric to Lift:
+
+Total Gross Merchandize Value (GMV)
+
+
 # Analysis Approach:
 
   a. At aggregate level look at most popular fitness tracker qualities.
