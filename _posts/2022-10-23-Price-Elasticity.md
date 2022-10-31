@@ -1,3 +1,8 @@
+# Metric to Lift:
+
+Total Gross Merchandise Value (GMV) -- the usual company north star metric in e-commerce
+
+
 # Business Problem:
 
 Price elasticity is traditionally how much change in price results in how much change in demand (can change this to another output variable such as add-to-cart or ratings). This is important to understand because those who set product/service prices want to know whether or not their will be allegiance to a product regardless of a price point. And if demand does not change with a price hike or dip, this means that brand affinity and differentiation from competitors has been reached.
@@ -6,11 +11,6 @@ Price elasticity is traditionally how much change in price results in how much c
 # Hypothesis: 
 
 Following the economic principle: as price goes down demand increases and vice versa.
-
-
-# Metric to Lift:
-
-Total Gross Merchandise Value (GMV) -- the usual company north star metric in e-commerce
 
 
 # Analysis Approach:
