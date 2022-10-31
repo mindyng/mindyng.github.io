@@ -10,7 +10,7 @@ Following the economic principle: as price goes down demand increases and vice v
 
 # Metric to Lift:
 
-Total Gross Merchandize Value (GMV)
+Total Gross Merchandise Value (GMV) -- the usual company north star metric in e-commerce
 
 
 # Analysis Approach:
