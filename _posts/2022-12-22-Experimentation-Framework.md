@@ -31,6 +31,6 @@ to add acceptance criteria for new product feature roll out.
 
 
 # Reference: 
-
+[Statistics for People in a Hurry (Digestible Stats Terms](https://towardsdatascience.com/statistics-for-people-in-a-hurry-a9613c0ed0b)
 [Google, Chief Data Scientist on Overusing the Term “Statistically Significant” Makes You Look Clueless](https://towardsdatascience.com/overusing-the-term-statistically-significant-makes-you-look-clueless-f96e1ad1a78e)
 
