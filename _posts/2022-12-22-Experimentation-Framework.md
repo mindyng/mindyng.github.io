@@ -34,5 +34,5 @@ to add acceptance criteria for new product feature roll out.
 * [Statistics for People in a Hurry (Digestible Stats Terms](https://towardsdatascience.com/statistics-for-people-in-a-hurry-a9613c0ed0b)
 * [Never Start with a Hypothesis](https://towardsdatascience.com/hypothesis-testing-decoded-for-movers-and-shakers-bfc2bc34da41)
 * [Google, Chief Data Scientist on Overusing the Term “Statistically Significant” Makes You Look Clueless](https://towardsdatascience.com/overusing-the-term-statistically-significant-makes-you-look-clueless-f96e1ad1a78e)
-
+* [Minimum Viable Experimentation](https://roundup.getdbt.com/p/ep-36-minimum-viable-experimentation?utm_source=substack&utm_medium=email)
 
