@@ -23,7 +23,7 @@ Following the economic principle: as price goes down demand increases and vice v
 
 # Code
 
-https://nbviewer.org/github/mindyng/2022-Business-Projects/blob/main/price-elasticity.ipynb
+[Price Elasticity Python Code](https://nbviewer.org/github/mindyng/2022-Business-Projects/blob/main/price-elasticity.ipynb)
 
 
 # Recommendation: 
@@ -36,4 +36,4 @@ Keep selling fitness trackers in India. Though looks like Apple, FOSSIL, FitBit 
 Having one single number to say if price is elastic or not for a product is good signal. However, two things to remember is that it is best to do A/B tests to determine what is the best price to set a product. Another thing not to forget with price elasticity is to pair quantitative results with qualitative results such as "Why" are consumers choosing to pay for a product regardless of price changes. Therefore, looking at price elasticity amongst other metrics would be best to determine if a brand has its moat in the market.
 
 # Reference: 
-https://hbr.org/2015/08/a-refresher-on-price-elasticity
+[Harvard Business Review - Price Elasticity Refresher](https://hbr.org/2015/08/a-refresher-on-price-elasticity)
