@@ -33,6 +33,7 @@ Keep using hypothesis testing in order to vet initial results from A/B testing.
 # Conclusion:
 
 Hypothesis testing is a great way to add rigor to experiment results analyses.
+At the same time, it is best to make sure there are no data errors upstream such as could happen when a new ML infrastructure is implemented. Also, another piece of advice is to try user surveys to get insight on why experiment results are not turning out as expected.
 
 # Reference: 
 * [Statistics for People in a Hurry (Digestible Stats Terms)](https://towardsdatascience.com/statistics-for-people-in-a-hurry-a9613c0ed0b)
