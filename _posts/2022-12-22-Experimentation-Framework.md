@@ -20,7 +20,7 @@ to add acceptance criteria for new product feature roll out.
 2. Collect and Papare Data
 3. Visualize Results
 4. Test Hypothesis
-5. Conclusion/Caveat
+5. Conclusion/Recommendation
 
 # Code
 
