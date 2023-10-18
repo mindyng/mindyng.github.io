@@ -20,3 +20,37 @@ extract_date_features(data)
 data.head()
 ```
 
+```
+# Imput string 'NA', not Null's...
+
+query = """
+select total_items
+, estimated_order_place_duration
+, store_id
+, max_item_price
+, num_distinct_items
+, min_item_price
+, subtotal
+, hour
+, day
+, day_of_week
+, is_weekend
+, month
+, quarter
+, is_month_start
+, is_month_end
+, is_quarter_start
+, is_quarter_end
+, if(total_outstanding_orders = 'NA', 33, total_outstanding_orders) as total_outstanding_orders
+, if(total_onshift_dashers = 'NA', 4, total_onshift_dashers) as total_onshift_dashers
+, if(total_busy_dashers = 'NA', 41, total_busy_dashers) as total_busy_dashers
+, if(store_primary_category = 'NA', 'american', store_primary_category) as store_primary_category
+, if(order_protocol = 'NA', 1, order_protocol) as order_protocol
+, if(market_id = 'NA', 2, market_id) as market_id
+, if(estimated_store_to_consumer_driving_duration = 'NA', 535, estimated_store_to_consumer_driving_duration) as estimated_store_to_consumer_driving_duration
+from df2
+"""
+
+df2 = duckdb.query(query).df()
+df2
+```
