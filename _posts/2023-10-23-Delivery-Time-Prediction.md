@@ -15,6 +15,11 @@ When providing an accurate delivery time prediction, customers are more willing 
 
 ## Analysis/Approach:
 
+### Tech Stack:
+[DuckDB](https://duckdb.org/docs/guides/python/jupyter.html) for data engineering within Python notebook :D
+[Kaggle Jupyter Notebooks](https://www.kaggle.com/docs/notebooks) for analysis and notes.
+
+
 The task is to predict the delivery time (in seconds) using a dataset that has all the same predictors as the training dataset except for the target variable: delivery time.
 
 The predictors/independent variables were:
