@@ -46,9 +46,17 @@ outliers that needed to be excluded.
 ![nominal_distribution](nom_dist.png)
 
 For bivariate analysis, the focus was on which of the independent variables mostly affected the dependent/target variable even though there were other comparisons calculated.
-Multivariate analysis was limited since we wanted to quickly see any possible correlations between features and delivery time.
+The first picture shows numerical features against delivery time.
 
 ![bivariate_distribution](bivariate.png)
+
+Remaining bivariate comparisons are most, but not all categorical variables versus delivery time.
+
+
+
+Multivariate analysis was limited since we wanted to quickly see any possible correlations between features and delivery time.
+
+
 
 ## Insights:
 
