@@ -46,9 +46,10 @@ outliers that needed to be excluded.
 ![nominal_distribution](nom_dist.png)
 
 For bivariate analysis, the focus was on which of the independent variables mostly affected the dependent/target variable even though there were other comparisons calculated.
-The first picture shows numerical features against delivery time.
+The first picture shows numerical features against delivery time. Second bivariate comparison is with sample of the data to give a rough, but more clearer picture of correlation strength.
 
 ![bivariate_distribution](bivariate.png)
+![bivariate_distribution2](sample_corr.png)
 
 Remaining bivariate comparisons are most, but not all categorical variables versus delivery time.
 
