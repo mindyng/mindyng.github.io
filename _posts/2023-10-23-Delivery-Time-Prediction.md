@@ -54,8 +54,8 @@ The first picture shows numerical features against delivery time. Second bivaria
 Remaining bivariate comparisons are most, but not all categorical variables versus delivery time.
 
 ![market_corr](market_corr.png)
-![store_corr](market_corr.png)
-![categories_corr](market_corr.png)
+![store_corr](store_corr.png)
+![categories_corr](categories_corr.png)
 
 Multivariate analysis was limited since we wanted to quickly see any possible correlations between features and delivery time.
 
