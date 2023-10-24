@@ -83,6 +83,18 @@ Only from feeding the data into our AutoML did we discover the most influential 
 
 ## Insights:
 
-ser
+In order to choose an appropriate ML model, instead of choosing a couple and spending time fine-tuning them to get the best one based on appropriate performance metric, ended up using open source AutoML to compare 20 different models at once. Best model was chosen based on a Linear Regression performance metric called RMSE. Then it was fine-tuned to see if other versions of original best model perform better. Original best model remained superior. From this, the most important contributors to delivery time were determined. And finally, these were graphed against delivery time. The graphs are using the whole dataset (not sample). Therefore, interpreting positive/negative/no correlation is challenging. Hence, would refer to Feature Importance Plot over bivariate correlation graphs.
+
+![setup](setup.png)
+![preprocess](preprocess.png)
+![models](models.png)
+![best_model](best_model.png)
+![residuals](residuals.png)
+![feature_importance](feature_importance.png)
+![store_dt](store_dt.png)
+![hour_dt](hour_dt.png)
+![outorders_dt](outorders_dt.png)
 
 ## Business Recommendation/Impact for Growth:
+
+Given that the store, hour and total outstanding orders were the top 3 important contributors to delivery time prediction, would focus on particular vendors' turn around time or even drop vendors that are not helping with providing SLA with respect to delivery time. When an order is placed is crucial as well as high order times such as around meal times would impact delivery time predictions because there can be a huge lag when there are a lot of orders in the queue versus when orders are placed in between meal times. Last, total outstanding orders need to be monitored because if there are too many then business needs to help balance the supply side of the market. Some examples for this is by handing out incentives for dashers who take on more orders/deliver faster.
