@@ -43,6 +43,8 @@ into univariate and bivariate analyses.
 Univariate analysis could have been isolated to the target variable, but I wanted to see the distribution of each variable in order to see the distribution and detect
 outliers that needed to be excluded. 
 
+![nominal_distribution](nom_dist.png)
+
 For bivariate analysis, the focus was on which of the independent variables mostly affected the dependent/target variable even though there were other comparisons calculated.
 Multivariate analysis was limited since we wanted to quickly see any possible correlations between features and delivery time.
 
