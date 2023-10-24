@@ -16,8 +16,9 @@ When providing an accurate delivery time prediction, customers are more willing 
 ## Analysis/Approach:
 
 ### Tech Stack:
-1. [DuckDB](https://duckdb.org/docs/guides/python/jupyter.html) for data engineering within Python notebook :D
-2. [Kaggle Jupyter Notebooks](https://www.kaggle.com/docs/notebooks) for analysis and notes.
+1. [DuckDB](https://duckdb.org/docs/guides/python/jupyter.html) for database/data engineering within Python notebook 😀
+2. [Kaggle Jupyter Notebooks](https://www.kaggle.com/docs/notebooks) for analysis and notes
+3. [Pycaret](https://pycaret.gitbook.io/docs/) for AutoML 😲
 
 
 The task is to predict the delivery time (in seconds) using a dataset that has all the same predictors as the training dataset except for the target variable: delivery time.
@@ -66,6 +67,22 @@ Multivariate analysis was limited since we wanted to quickly see any possible co
 
 ![multivariate_corr](multivariate.png)
 
+This initial exploratory analysis gave us a look at the quality of the data (outliers) along with any possible correlations there could be with delivery time. Before doing exploratory data analysis, it would make sense that some possible strong indicators of delivery time would be number of items ordered, geographic distance of store to customer, experience of courier, weather conditions. Our dataset did not have all these variables, except total items.
+
+Some markets did have longer delivery times, meaning they may have been geograpically more spread out, had higher traffic areas, more inexperienced dashers, restaurants that were slower in output, etc. Also, there was a store that took significantly longer than all the rest of the stores in the dataset with a lot of variance as well. Japanese cuisine for some reason has the highest variance when it came to delivery time. This may be due to a variety of restaurants serving Japanese food that are more efficient than others/variety of prep times within Japanese cuisine. 
+
+According to metric used to grade numerical-numerical correlations, delivery time had mostly strong correlations.
+
+Cramer's V Score Thresholds:
+
+* weak: >0.05; moderate: >0.10; strong: >0.15; and very strong: >0.25.
+* strong: estimated_store_to_consumer_driving_duration, subtotal, num_distinct_items, total_outstanding_orders
+* moderate: max_item_price
+
+Only from feeding the data into our AutoML did we discover the most influential factors to predict delivery time.
+
 ## Insights:
+
+ser
 
 ## Business Recommendation/Impact for Growth:
