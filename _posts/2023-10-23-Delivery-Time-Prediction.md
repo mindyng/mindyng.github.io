@@ -59,7 +59,7 @@ Remaining bivariate comparisons are most, but not all categorical variables vers
 
 Multivariate analysis was limited since we wanted to quickly see any possible correlations between features and delivery time.
 
-
+![multivariate_corr](multivariate.png)
 
 ## Insights:
 
