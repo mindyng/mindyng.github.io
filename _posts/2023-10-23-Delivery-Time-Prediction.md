@@ -161,4 +161,4 @@ df2
 
 Given that the store, hour and total outstanding orders were the top 3 important contributors to delivery time prediction, would focus on particular vendors' turn around time or even drop vendors that are not helping with providing SLA with respect to delivery time. When an order is placed is crucial as well as high order times such as around meal times would impact delivery time predictions because there can be a huge lag when there are a lot of orders in the queue versus when orders are placed in between meal times. Last, total outstanding orders need to be monitored because if there are too many then business needs to help balance the supply side of the market. Some examples for this is by handing out incentives for dashers who take on more orders/deliver faster.
 
-* [Code](https://github.com/mindyng/2023-Business-Projects/blob/main/Food_Delivery/doordash-delivery-time-prediction.ipynb)
+[Code](https://github.com/mindyng/2023-Business-Projects/blob/main/Food_Delivery/doordash-delivery-time-prediction.ipynb)
