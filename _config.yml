@@ -1,4 +1,4 @@
 name: Mindy Ng, Data Analyst
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-include: - _posts
+include: _posts
