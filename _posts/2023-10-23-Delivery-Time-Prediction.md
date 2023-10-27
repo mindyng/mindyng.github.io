@@ -49,6 +49,7 @@ Did some feature engineering in order to create possible strong predictors for d
 
 ```
 # breaking up order creation into different data components
+
 def extract_date_features(data):
     data['created_at'] = pd.to_datetime(data['created_at']) 
     
@@ -124,6 +125,7 @@ In order to choose an appropriate ML model, instead of choosing a couple and spe
 
 Final chosen model from Pycaret package used to make [predictions](https://github.com/mindyng/2023-Business-Projects/blob/main/Food_Delivery/delivery_time_predictions.csv) on given test set, which had to be cleaned up by making sure columns were exactly like original dataset fed into setup() for training. Main data engineering needed besided aligning columns with training dataset was to take care of the string null's as shown below. 
 
+```
 # Imput string 'NA', not Null's...
 
 query = """
@@ -156,6 +158,7 @@ from df2
 
 df2 = duckdb.query(query).df()
 df2
+```
 
 ## Business Recommendation/Impact for Growth:
 
