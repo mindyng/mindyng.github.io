@@ -104,9 +104,26 @@ Cramer's V Score Thresholds:
 * strong: estimated_store_to_consumer_driving_duration, subtotal, num_distinct_items, total_outstanding_orders
 * moderate: max_item_price
 
-From here, able to prepare data to feed into AutoML algorithms including properly imputing NA values.
+From here, able to prepare data to feed into AutoML algorithms including properly imputing few NaN values in target variable.
 
-```
+Only from feeding the data into our AutoML did we discover the most influential factors to predict delivery time.
+
+## Insights:
+
+In order to choose an appropriate ML model, instead of choosing a couple and spending time fine-tuning them to get the best one based on appropriate performance metric, ended up using open source AutoML to compare 20 different models at once. Though the process was automated, there was some manual work done such as with pre-processing the data used to train models (except for one-hot encoding). Pycaret had some functions  Best model was chosen based on a Linear Regression performance metric called RMSE. Then it was fine-tuned to see if other versions of original best model perform better. Original best model remained superior. From this, the most important contributors to delivery time were determined. And finally, these were graphed against delivery time. The graphs are using the whole dataset (not sample). Therefore, interpreting positive/negative/no correlation is challenging. Hence, would refer to Feature Importance Plot over bivariate correlation graphs.
+
+![setup](setup.png)
+![preprocess](preprocess.png)
+![models](models.png)
+![best_model](best_model.png)
+![residuals](residuals.png)
+![feature_importance](feature_importance.png)
+![store_dt](store_dt.png)
+![hour_dt](hour_dt.png)
+![outorders_dt](outorders_dt.png)
+
+Final chosen model from Pycaret package used to make [predictions](https://github.com/mindyng/2023-Business-Projects/blob/main/Food_Delivery/delivery_time_predictions.csv) on given test set, which had to be cleaned up by making sure columns were exactly like original dataset fed into setup() for training. Main data engineering needed besided aligning columns with training dataset was to take care of the string null's as shown below. 
+
 # Imput string 'NA', not Null's...
 
 query = """
@@ -139,26 +156,9 @@ from df2
 
 df2 = duckdb.query(query).df()
 df2
-```
-
-Only from feeding the data into our AutoML did we discover the most influential factors to predict delivery time.
-
-## Insights:
-
-In order to choose an appropriate ML model, instead of choosing a couple and spending time fine-tuning them to get the best one based on appropriate performance metric, ended up using open source AutoML to compare 20 different models at once. Though the process was automated, there was some manual work done such as with pre-processing the data used to train models (except for one-hot encoding). Pycaret had some functions  Best model was chosen based on a Linear Regression performance metric called RMSE. Then it was fine-tuned to see if other versions of original best model perform better. Original best model remained superior. From this, the most important contributors to delivery time were determined. And finally, these were graphed against delivery time. The graphs are using the whole dataset (not sample). Therefore, interpreting positive/negative/no correlation is challenging. Hence, would refer to Feature Importance Plot over bivariate correlation graphs.
-
-![setup](setup.png)
-![preprocess](preprocess.png)
-![models](models.png)
-![best_model](best_model.png)
-![residuals](residuals.png)
-![feature_importance](feature_importance.png)
-![store_dt](store_dt.png)
-![hour_dt](hour_dt.png)
-![outorders_dt](outorders_dt.png)
 
 ## Business Recommendation/Impact for Growth:
 
 Given that the store, hour and total outstanding orders were the top 3 important contributors to delivery time prediction, would focus on particular vendors' turn around time or even drop vendors that are not helping with providing SLA with respect to delivery time. When an order is placed is crucial as well as high order times such as around meal times would impact delivery time predictions because there can be a huge lag when there are a lot of orders in the queue versus when orders are placed in between meal times. Last, total outstanding orders need to be monitored because if there are too many then business needs to help balance the supply side of the market. Some examples for this is by handing out incentives for dashers who take on more orders/deliver faster.
 
-[Code](https://github.com/mindyng/2023-Business-Projects/blob/7deb74bc28296ff57840fe6c5c0bcc4bb599029e/doordash-delivery-time-prediction.ipynb)
+* [Code](https://github.com/mindyng/2023-Business-Projects/blob/main/Food_Delivery/doordash-delivery-time-prediction.ipynb)
