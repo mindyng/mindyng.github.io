@@ -1,6 +1,6 @@
 ## Business Problem:
 
-![test](assets/test.png)
+![test](https://github.com/mindyng/mindyng.github.io/blob/master/assets/test.png)
 
 ## Metric(s) to Lift:
 
