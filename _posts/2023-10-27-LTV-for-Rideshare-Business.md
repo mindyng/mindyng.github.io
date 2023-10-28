@@ -1,5 +1,7 @@
 ## Business Problem:
 
+![test](assets/test.png)
+
 ## Metric(s) to Lift:
 
 ## Hypothesis:
