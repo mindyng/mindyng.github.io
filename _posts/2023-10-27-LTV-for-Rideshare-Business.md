@@ -28,7 +28,7 @@ Systematically went through analyzing Lyft's business with high level metrics: L
 Used [DuckDB](https://duckdb.org/) again to do a lot of data engineering/data manipulation.
 
 Value of a driver to Lyft over the entire projected lifetime of a driver can be defined as:
-[ltv](/)
+![ltv](lyft_ltv.png)
 
 
 
