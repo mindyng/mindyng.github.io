@@ -81,4 +81,4 @@ Driving tenure is the best indicator for churn. How long a driver has been on th
 Considering that a Lyft lifetime is approximately 2.5 years, at 2 year mark, providing some bonus in monetary or car maintenance reward would make driver feel recognized and supported and most likely carry-on as a Lyft driver.
 * To increase retention rates, go heavy on incentives 1 week out from onboarding and whatever incentive/promotion was given for cohort 18 to start driving so quickly as well as for cohort 16 to have overall great retention rates continue to replicate that strategy  since engagement was high during those times.
 
-[Code]()
+[Code](https://www.kaggle.com/mindyng/lyft-ba-assignment)
