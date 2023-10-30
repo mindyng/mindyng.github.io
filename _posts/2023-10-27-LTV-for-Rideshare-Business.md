@@ -67,7 +67,7 @@ Driving tenure is the best indicator for churn. How long a driver has been on th
 
 7. Factors Driving Churn Split Between Churn and Engaged/Retained
 
-![churn_dif](churn_non_churn_diff).png)
+![churn_diff](churn_non_churn_diff.png)
 
 8. Percent of Active Drivers By Onboard Week
 
