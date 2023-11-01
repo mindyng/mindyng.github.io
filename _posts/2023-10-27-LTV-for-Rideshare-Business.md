@@ -28,27 +28,27 @@ Used [DuckDB](https://duckdb.org/) again to do a lot of data engineering/data ma
 
 1. Value of a driver to Lyft over the entire projected lifetime of a driver can be defined as:
 
-![ltv](/_posts/lyft_ltv.png)
+![ltv](/assets/images/lyft_ltv.png)
 
 2. Main factors affecting LTV:
 
-![ltv_features](ltv_features.png)
+![ltv_features](/assets/images/ltv_features.png)
 
 We can see in this chart that number of different days driver has driven for has the most impact on LTV. Some other factors include ride cost, usual fare for each driver’s ride, how long in distance each ride is, how long in duration each ride is. 
 
 3. Main Factors Contributing to LTV Graphed Against It:
 
-![unique_drive_days](unique_drive_days.png)
+![unique_drive_days](/assets/images/unique_drive_days.png)
 
 * Most interesting finding is that those who provide most value to Lyft drive the least number of days, which means whenever they’re out completing rides, they have a high volume of rides they are completing!
 
-![ride_price](ride_price.png)
+![ride_price](/assets/images/ride_price.png)
 
 * Even the average ride value ($) does not have a strong correlation to LTV as would be suspected would be a strong indicator for high LTV.
 
 4. Average Lifetime of a Driver:
 
-![avg_ltv](avg_ltv.png)
+![avg_ltv](/assets/images/avg_ltv.png)
 
 * This was determined by our churn rate
 * Churn rate was determined by churn definition, which was driver who had no activity within 7 days from last recorded ride
@@ -56,23 +56,23 @@ We can see in this chart that number of different days driver has driven for has
 
 5. Supply vs Demand on Weekly Basis
 
-![demand_supply](demand_supply.png)
+![demand_supply](/assets/images/demand_supply.png)
 
 We can see here that number of rides trends with number of drivers until week 19 peak happens. Peak most likely due to promotion or maybe some special event. Afterwards, drivers head towards decline leading to marketplace imbalance.
 
 6. Main Factors Affecting Churn:
 
-![churn_features](churn_features.png)
+![churn_features](/assets/images/churn_features.png)
 
 Driving tenure is the best indicator for churn. How long a driver has been on the platform/how long they have driven for is indicator for churning. Meaning those who are new to Lyft are the most prone to churning.
 
 7. Factors Driving Churn Split Between Churn and Engaged/Retained
 
-![churn_diff](churn_non_churn_diff.png)
+![churn_diff](/assets/images/churn_non_churn_diff.png)
 
 8. Percent of Active Drivers By Onboard Week
 
-![retention_by_cohort](retention_by_cohort.png)
+![retention_by_cohort](/assets/images/retention_by_cohort.png)
 
 # Business Growth/Impact for Growth:
 
