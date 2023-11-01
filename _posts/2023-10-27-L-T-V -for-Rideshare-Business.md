@@ -74,7 +74,7 @@ Driving tenure is the best indicator for churn. How long a driver has been on th
 
 ![retention_by_cohort](/assets/images/retention_by_cohort.png)
 
-# Business Growth/Impact for Growth:
+# Business Recommendation/Impact for Growth:
 
 * Considering that those contributing most to Lyft’s revenue and hopefully profitable are those who drive a lot during the days they drive, would be best to reward these customers. This would incentivize them/reinforce this strategy of maximizing time out on the road. Possibly free/discounted tickets to events they like would be a good move to increase LTV/retention.
 * In order to determine how to increase activity/engagement of churned drivers I would recommend a deeper dive into user journeys and see what behavior brought high LTV/power users from casual user to loyal Lyft driver. Further investigation needed to determine ‘ah-ha’ moment to safeguard against driver/supply drop-off.
