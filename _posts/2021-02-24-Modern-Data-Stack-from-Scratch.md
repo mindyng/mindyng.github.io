@@ -48,7 +48,7 @@ meltano init ./meltano
 cd ./meltano
 ```
 
-After initiating Meltano, there were several subdirectories created along with a meltano.yml file. This is where most of the Extraction and Loading work was done along with working with Meltano's CLI. For more information, this is [Meltano's documentation](https://meltano.com/docs/project.html#projects) to understand how configuration files work. 
+After initiating Meltano, there were several subdirectories created along with a meltano.yml file. This is where most of the Extraction and Loading work was done along with working with Meltano's CLI. For more information, this is [Meltano's documentation](https://docs.meltano.com/) to understand how configuration files work. 
 
 ## Configuring Sources for Extraction
 
