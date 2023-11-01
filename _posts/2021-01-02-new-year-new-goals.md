@@ -1,4 +1,4 @@
-I knew my transition into tech would not be an easy feat, but I did not think it would be _this_ challenging. There is a lot going up against me. One mentor recently reminded me that there are few females in this field.
+I knew my transition into tech would not be an easy feat, but I did not think it would be _this_ challenging. There is a lot I am up against. One mentor recently reminded me that there are few females in this field.
 
 I am the underdog. 
 
