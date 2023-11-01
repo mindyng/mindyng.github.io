@@ -75,23 +75,23 @@ Then went into univariate and bivariate analyses.
 Univariate analysis could have been isolated to the target variable, but I wanted to see the distribution of each variable in order to see the distribution and detect
 outliers that needed to be excluded. 
 
-![nominal_distribution](nom_dist.png)
+![nominal_distribution](/assets/images/nom_dist.png)
 
 For bivariate analysis, the focus was on which of the independent variables mostly affected the dependent/target variable even though there were other comparisons calculated.
 The first picture shows numerical features against delivery time. Second bivariate comparison is with sample of the data to give a rough, but more clearer picture of correlation strength.
 
-![bivariate_distribution](bivariate.png)
-![bivariate_distribution2](sample_corr.png)
+![bivariate_distribution](/assets/images/bivariate.png)
+![bivariate_distribution2](/assets/images/sample_corr.png)
 
 Remaining bivariate comparisons are most, but not all categorical variables versus delivery time.
 
-![market_corr](market_corr.png)
-![store_corr](store_corr.png)
-![categories_corr](categories_corr.png)
+![market_corr](/assets/images/market_corr.png)
+![store_corr](/assets/images/store_corr.png)
+![categories_corr](/assets/images/categories_corr.png)
 
 Multivariate analysis was limited since we wanted to quickly see any possible correlations between features and delivery time.
 
-![multivariate_corr](multivariate.png)
+![multivariate_corr](/assets/images/multivariate.png)
 
 This initial exploratory analysis gave us a look at the quality of the data (outliers) along with any possible correlations there could be with delivery time. Before doing exploratory data analysis, it would make sense that some possible strong indicators of delivery time would be number of items ordered, geographic distance of store to customer, experience of courier, weather conditions. Our dataset did not have all these variables, except total items.
 
@@ -113,15 +113,15 @@ Only from feeding the data into our AutoML did we discover the most influential 
 
 In order to choose an appropriate ML model, instead of choosing a couple and spending time fine-tuning them to get the best one based on appropriate performance metric, ended up using open source AutoML to compare 20 different models at once. Though the process was automated, there was some manual work done such as with pre-processing the data used to train models (except for one-hot encoding). Pycaret had some functions  Best model was chosen based on a Linear Regression performance metric called RMSE. Then it was fine-tuned to see if other versions of original best model perform better. Original best model remained superior. From this, the most important contributors to delivery time were determined. And finally, these were graphed against delivery time. The graphs are using the whole dataset (not sample). Therefore, interpreting positive/negative/no correlation is challenging. Hence, would refer to Feature Importance Plot over bivariate correlation graphs.
 
-![setup](setup.png)
-![preprocess](preprocess.png)
-![models](models.png)
-![best_model](best_model.png)
-![residuals](residuals.png)
-![feature_importance](feature_importance.png)
-![store_dt](store_dt.png)
-![hour_dt](hour_dt.png)
-![outorders_dt](outorders_dt.png)
+![setup](/assets/images/setup.png)
+![preprocess](/assets/images/preprocess.png)
+![models](/assets/images/models.png)
+![best_model](/assets/images/best_model.png)
+![residuals](/assets/images/residuals.png)
+![feature_importance](/assets/images/feature_importance.png)
+![store_dt](/assets/images/store_dt.png)
+![hour_dt](/assets/images/hour_dt.png)
+![outorders_dt](/assets/images/outorders_dt.png)
 
 Final chosen model from Pycaret package used to make [predictions](https://github.com/mindyng/2023-Business-Projects/blob/main/Food_Delivery/delivery_time_predictions.csv) on given test set, which had to be cleaned up by making sure columns were exactly like original dataset fed into setup() for training. Main data engineering needed besided aligning columns with training dataset was to take care of the string null's as shown below. 
 
