@@ -1,7 +1,7 @@
 I have been wanting to explore streamed events post-ingestion. Tracking a customer's user behavior in real-time is extremely valuable because it allows you to see 
 instant reponse to a new product feature or even intervene immediately when you see a customer possibly churn.
 
-![sitemap](sitemap.png)
+![sitemap](/assets/images/sitemap.png)
 
 Though this is the standard data that comes into a company's system, testing a data pipeline's transformation and BI layer does not need code committed to 
 Production. This is where mock event data comes in. In order to create some, I knew I had to find some online or create some on my own. And I ended up bumping into
@@ -11,7 +11,7 @@ The differentiator in this data was that random event data was created that simu
 
 Here is a sample event:
 
-![event](fake_event.png)
+![event](/assets/images/fake_event.png)
 
 And in order to load the data into my local Postgres database, sqlalchemy library was called. What it did was help
 create the structure in order to load and store the mock data. It helped create the table, column and data types. Script is [here](https://github.com/mindyng/2021-Projects/blob/main/events_to_postgres%20copy.py). From here, after connecting to database and creating mock data, events were loaded into postgres database.
@@ -20,11 +20,11 @@ From here, I wanted to see if I could create different business logic models usi
 
 my projects.yml file: 
 
-![profiles](profiles.png)
+![profiles](/assets/images/profiles.png)
 
 dbt_project.yml file:
 
-![dbt_project](dbt_project.png)
+![dbt_project](/assets/images/dbt_project.png)
 
 and my DAG/Lineage Graph from running:
 
@@ -32,11 +32,11 @@ and my DAG/Lineage Graph from running:
 dbt run docs
 dbt docs serve
 ```
-![DAG](DAG.png)
+![DAG](/assets/images/DAG.png)
 
 Finally, I was able to use the metadata to Tableau and create a dashboard showing hourly pageviews as well as the most hits per page. 
 
-![tableau](tableau.png)
+![tableau](/assets/images/tableau.png)
 
 
 And as expected, there is an hourly cyclical trend as well as huge hits concentrated in home, product A and product B pages. Thus, being able to track customer behavior allows us to closely monitor whether or not business is successful at providing solution to customers at a granular level. 
