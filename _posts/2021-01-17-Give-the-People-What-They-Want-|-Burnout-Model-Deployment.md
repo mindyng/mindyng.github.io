@@ -8,4 +8,5 @@ Though upon testing the tool, I realized that the model was not predicting negat
 
 Though it was awesome to be able to have a model running in 7 blocks of code and 28-liner Python script. Horray! Healthcare workers now have a chance to get diagnosed with burnout quickly to sustain the healthcare workforce so that there are enough nurses to help those who are sick.
 
-##### 10/31/23 Update: Streamlit hosted classifier no longer active due to prolonged inactive engagement with server.
+---
+10/31/23 Update: Streamlit hosted classifier no longer active due to prolonged inactive engagement with server.
