@@ -59,9 +59,7 @@ in order to segment a window of time for viewing.
 
 https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov
 
-<video width="640" height="360" controls>
-  <source src="/assets/videos/deployedapp.mov" type="video/quicktime">
-</video>
+<iframe width="420" height="315" src="https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov" allowfullscreen></iframe>
 
 # [Web Application Development](https://github.com/mindyng/2021-Projects/blob/main/fluence_digital/deploy%20copy.py) and Deployment
 
