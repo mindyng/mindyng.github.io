@@ -71,6 +71,8 @@ The repo included my web app Python script and a requirements.txt to specify pac
 
 https://user-images.githubusercontent.com/12889138/123044053-06653b80-d3ae-11eb-8ea1-8d5ed3a1f0e2.mov
 
+![streamlit](/assets/videos/deployedapp.mov)
+
 # Conclusion
 
 The metrics table showed the predictions with the lowest RMSE and lowest MAE was Fluence's forecast. And visualizations showed that Fluence's difference from actual 
