@@ -1,4 +1,4 @@
-![test](/assets/images/test.png)
+![test](/assets/test.png)
 
 ## Business Problem:
 
