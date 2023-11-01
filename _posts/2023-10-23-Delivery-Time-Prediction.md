@@ -1,5 +1,3 @@
-![test](/assets/images/test.png)
-
 ## Business Problem:
 
 When it comes to ETA for a service, how long an order takes to arrive at a customer's location is a huge factor in whether or not a customer will choose to order or even come back
