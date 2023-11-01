@@ -1,1 +1,1 @@
-![explanation](<img width="691" alt="assets" src="https://github.com/mindyng/mindyng.github.io/assets/12889138/c8d18abc-719e-40a5-9140-0ca57f5b3867">)
+<img width="691" alt="assets" src="https://github.com/mindyng/mindyng.github.io/assets/12889138/e86f10ce-283b-4aee-bee8-4a40f8a6043d">
