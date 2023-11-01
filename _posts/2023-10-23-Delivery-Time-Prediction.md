@@ -1,4 +1,5 @@
 ![test](/assets/test.png)
+![test](/assets/avg_ltv.png)
 
 ## Business Problem:
 
