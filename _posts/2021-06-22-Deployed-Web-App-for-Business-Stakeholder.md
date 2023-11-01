@@ -13,7 +13,7 @@ given a year's worth of data on the actual price of energy ($/kWh), Fluence's pr
 
 My data was stored in a Snowflake instance. 
 
-![snowflake](snowflake.png)
+![snowflake](/assets/images/snowflake.png)
 
 ## Extraction
 
