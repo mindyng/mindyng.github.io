@@ -59,6 +59,8 @@ in order to segment a window of time for viewing.
 
 https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov
 
+<iframe width="420" height="315" src="https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov" frameborder="0" allowfullscreen></iframe>
+
 # [Web Application Development](https://github.com/mindyng/2021-Projects/blob/main/fluence_digital/deploy%20copy.py) and Deployment
 
 The last step was to create a web application that could be deployed so the business stakeholder could get a link to see data, interact with graphs and read the data 
