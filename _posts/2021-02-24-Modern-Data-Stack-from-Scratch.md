@@ -214,6 +214,6 @@ Lastly, to create a Dashboard, went to CHARTS (next to COMPONENTS) and added cha
 
 ![superset](/assets/images/superset.png)
 
-Of course, this was just the beginning. There is so much [more you can do](https://docs.preset.io/v1/docs/en/about-dashboards)! :) 
+Of course, this was just the beginning. There is so much [more you can do](https://preset.io/use-cases/internal-bi/)! :) 
 
 In the end, was able to from scratch: build a data warehouse (PostgreSQL), extract and load data into the warehouse (Meltano), transform the data (dbt) and create visualizations to present insights as a dashboard (Superset). 
