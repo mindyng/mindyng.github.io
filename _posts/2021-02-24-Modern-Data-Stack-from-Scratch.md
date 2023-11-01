@@ -103,7 +103,7 @@ At this point, could see in TablePlus three new tables loaded in database with p
 ds4fnp.tap_spreadsheets_anywhere.mit__house_elections
 ```
 
-![postgreSQL](postgres.png)
+![postgreSQL](/assets/images/postgres.png)
 
 # Transformation 
 
@@ -161,7 +161,7 @@ dbt docs serve
 
 This generated data warehouse's documentation and spun up temporary webserver for viewing. On the left side bar, could view all the different data models from raw to source to transformed. What was really cool was that I viewed a lineage graph of tables' evolution from source by pressing turquoise icon on bottom right of page. This and documentation are highly valuable when projects get complex. And that can happen really quickly.
 
-![dbt](dbt.png)
+![dbt](/assets/images/dbt.png)
 
 # Visualization
 
@@ -212,7 +212,7 @@ Did this for all 3 models: House of Representatives, Senate and Presidential ele
 
 Lastly, to create a Dashboard, went to CHARTS (next to COMPONENTS) and added charts to plain canvas. Result was in one view: House, Senate and Presidential results all grouped by Party. Last things remaining were to add a title and save.
 
-![superset](superset.png)
+![superset](/assets/images/superset.png)
 
 Of course, this was just the beginning. There is so much [more you can do](https://docs.preset.io/v1/docs/en/about-dashboards)! :) 
 
