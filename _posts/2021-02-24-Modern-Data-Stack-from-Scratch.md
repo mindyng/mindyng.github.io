@@ -52,7 +52,7 @@ After initiating Meltano, there were several subdirectories created along with a
 
 ## Configuring Sources for Extraction
 
-We will be using plugin called [tap-spreadsheets-anywhere](https://meltano.com/plugins/extractors/spreadsheets-anywhere.html#getting-started). It is able to pull data from CSV files and Excel spreadsheets on cloud and local storage. Ran the following command in meltano CLI to add extractor to my meltano project:
+We will be using plugin called [tap-spreadsheets-anywhere](https://hub.meltano.com/extractors/tap-spreadsheets-anywhere/). It is able to pull data from CSV files and Excel spreadsheets on cloud and local storage. Ran the following command in meltano CLI to add extractor to my meltano project:
 
 ```
 meltano add extractor tap-spreadsheets-anywhere
