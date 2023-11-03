@@ -59,10 +59,6 @@ in order to segment a window of time for viewing.
 
 https://user-images.githubusercontent.com/12889138/123158227-5b419a00-d420-11eb-8d79-dd1b389ae251.mov
 
-<video width="320" height="240" controls>
-  <source type="video/mp4" src="https://github.com/mindyng/mindyng.github.io/blob/master/assets/videos/fluencedigital_viz.mp4">
-</video>
-
 # [Web Application Development](https://github.com/mindyng/2021-Projects/blob/main/fluence_digital/deploy%20copy.py) and Deployment
 
 The last step was to create a web application that could be deployed so the business stakeholder could get a link to see data, interact with graphs and read the data 
@@ -74,10 +70,6 @@ For deployment, that was even simpler because all I had to do was request an inv
 The repo included my web app Python script and a requirements.txt to specify packages needed to build the app and everything else was spun up by Streamlit. And within a few minutes my app was deployed on the web with a URL I shared with my business stakeholder. Get a quick preview below or even better: check it out yourself [here](https://share.streamlit.io/mindyng/2021-projects/main/fluence_digital/streamlit_deploy.py)!
 
 https://user-images.githubusercontent.com/12889138/123044053-06653b80-d3ae-11eb-8ea1-8d5ed3a1f0e2.mov
-
-<video width="320" height="240" controls>
-  <source type="video/mp4" src="https://github.com/mindyng/mindyng.github.io/blob/master/assets/videos/deployedapp.mp4">
-</video>
 
 # Conclusion
 
