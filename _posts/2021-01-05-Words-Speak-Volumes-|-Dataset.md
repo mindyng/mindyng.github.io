@@ -1,7 +1,7 @@
 Pictures of healthcare workers in Contagion PPE and nurses crouched on hospital floors paralyzed from the Pandemic's onslaught say a 1000 words.
 Though words speak volume.
 
-I have created a [dataset](https://www.kaggle.com/mindyng/burnout-dataframe) of tweets from nurses chronicling their day-to-day on the frontlines as well as the toll it has had on their mental health and morale.
+I have created a [dataset](https://www.kaggle.com/mindyng/burnout-dataframe-without-credentials) of tweets from nurses chronicling their day-to-day on the frontlines as well as the toll it has had on their mental health and morale.
 
 The dataset will eventually be used to create a sentiment analyzer that would help a hospital director or even a healthcare worker determine whether or not they are currently burnt out or on the path to it. In order to construct a robust dataset, I went after:
 
