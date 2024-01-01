@@ -67,10 +67,7 @@ than what I can accomplish with Plotly libraries. Although D3.js was the origina
 not just negative, positive and neutral. It allowed me to have a more complex matrix that so I could compare two different chatbots in one: 
 ChatGPT and Pi. 
 
-Another cool thing I wanted to do was topic modeling which I was able to achieve using LSA. As mentioned before, unigrm/trigrams
-were not providing enough user signal that spoke of chatbot features, so I thought looking at data at a higher level might help in
-pintpointing reasons tied to product feature for different sentiments. And t-SNE clustering of topics helped depict how popular a 
-topic was as well as its proximity/relationship to another topic.
+Another cool thing I wanted to do was topic modeling which I was able to achieve using LSA and t-SNE (visualization helper with high dimensional data). As mentioned before, unigrm/trigrams were not providing enough user signal that spoke of chatbot features, so I thought looking at data at a higher level would be better. I wanted to look at reasons tied to product feature for different sentiments. And LDA helped drive topics and t-SNE helped reduce vectors into a more interpretable graph. Topics and their popularity were visible as well as its proximity/relationship to other topics.
 
 ### Next iteration:
 * Try to get get a filter to get comments that speak on topics surrounding metrics of succcess.
