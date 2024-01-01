@@ -49,13 +49,13 @@ clean data such as financial data cleaned up by a data engineer.
 While refamiliarizing myself, I got to learn about common social media cleanings - translating emoji's/slang and expanding 
 abbreviations. This added a whole new layer of complexity to NLP wrangling, but was interesting to implement. 
 
-## Sentiment Scoring
+### Sentiment Scoring
 This was a really cool experiment as I tested different sentiment libraries: Vader, Hugging Face's Happy Transformer, TextBlob
 and even Google's NL API. I ended up choosing Vader because it specialized in social media data (could handle emoji's and
 slang), but also Happy Transformer and Google's NL API lacked context window (did not allow for large commments) and TextBlob 
 lacked accuracy when it came to sentiment scoring.
 
-# Visualization
+### Visualization
 When it came to graphing sentiment, I had to lead with questions that were specifically tied to sentiment. The goal was to extract
 words/phrases that were tied to metrics of success and broken down by sentiment. Then would enable sentiment mapping to features 
 that had the most ROI.
@@ -63,12 +63,10 @@ that had the most ROI.
 Realized context was king since unigram and even trigram wordclouds and bar charts lacked signal.
 
 Discovering ScatterText was a game changer and helped me achieve my original goal of graphing something interactive/more complex
-than what I can accomplish with Plotly libraries. Although D3.js was the original plan, ScatterText helped me segregate words by sentiment - 
-not just negative, positive and neutral. It allowed me to have a more complex matrix that so I could compare two different chatbots in one: 
-ChatGPT and Pi. 
+than what I can accomplish with Plotly libraries. Although D3.js was the original plan, ScatterText helped me segregate words by sentiment - not just negative, positive and neutral. It allowed me to have a more complex matrix that so I could compare two different chatbots in one: ChatGPT and Pi. 
 
 Another cool thing I wanted to do was topic modeling which I was able to achieve using LSA and t-SNE (visualization helper with high dimensional data). As mentioned before, unigrm/trigrams were not providing enough user signal that spoke of chatbot features, so I thought looking at data at a higher level would be better. I wanted to look at reasons tied to product feature for different sentiments. And LDA helped drive topics and t-SNE helped reduce vectors into a more interpretable graph. Topics and their popularity were visible as well as its proximity/relationship to other topics.
 
-### Next iteration:
+# Next iteration:
 * Try to get get a filter to get comments that speak on topics surrounding metrics of succcess.
 * Add feature release log to time series graphs to directly compare sentiment to new features coming out.
