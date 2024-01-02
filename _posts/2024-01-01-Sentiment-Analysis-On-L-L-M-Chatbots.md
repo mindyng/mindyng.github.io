@@ -7,21 +7,20 @@ a threat to the Data Scientist (DS) profession, there actually is a need for DS 
 This was reassuring since it seemed like LLMs/Generative AI are taking over the world.
 
 And as a Data Scientist, [defining metrics](https://data-chef.notion.site/Metric-Overview-fe3202bb07624dde85d2d1d8aee3fc8d) 
-are key to ensuring that a business is aligned with its mission statement defined through metrics of success.
+are key to ensuring that a business is aligned with its mission statement.
 
 # Business Recommendations
 
-After performing Exploratory Data Analysis (EDA), wrangling dirty API/NLP data, was able to determine that
-the overall sentiment on ChatGPT was most positive, as is evident from news/social media. What was surprising was
-that from all the chatbots compared, it was not ChatGPT's competitor, Claude, second in ranking, but Pi. The
-assumption was that Claude would be behind since its founders and majority of the early team were from OpenAI,
-the company behind ChatGPT and probably helped build out ChatGPT's first features. I believe Pi is an unexpectedly
-favorable ChatBot becomes it offers more of the human experience. 
+After performing Exploratory Data Analysis (EDA), wrangling dirty API/NLP data, I was able to determine that
+the overall sentiment on ChatGPT was mostly positive, as is evident from news/social media. What was surprising was
+that from all the chatbots compared, it was not ChatGPT's competitor, Claude from Anthropic, second in ranking, but Pi. The
+assumption was that Claude would be right behind ChatGPT since its founders and majority of the early team were from OpenAI,
+the company behind ChatGPT. So those who left OpenAI for Anthropic probably helped build out ChatGPT's first features/MVP. I believe Pi is an unexpectedly
+favorable ChatBot becomes it offers more of a human experience. 
 
-Caveat about conclusion is on limited sample size and not having even sampling from YouTube and Reddit. There is more 
-chatter on social media about ChatGPT, but there would have been more volume of data as well as even distribution of 
-comments between chat bots. Imbalanced data between chatbots could easily skew conclusions as sentiment per chatbot. One
-workaround is to do sentiment by percentage of population. Still though, best to get larger and more even samples.
+Caveat about conclusion is on limited sample size and not having even sampling from YouTube and Reddit. There was more 
+chatter on social media about ChatGPT, but there could have been more data scraping for other chat bots. Imbalanced data between chatbots could easily skew conclusions as sentiment per chatbot. One
+workaround is to do sentiment by percentage of population. 
 
 # [Code](https://github.com/mindyng/2023-Business-Projects/blob/main/sentiment-analysis-on-llm-chatbots.ipynb)
 
@@ -30,23 +29,24 @@ workaround is to do sentiment by percentage of population. Still though, best to
 Another motivation behind doing this sentiment analysis was to have something to complement the usual A/B tests. From my 
 experience and common web analyses, user behvior is just measured by their actions.  This can only provide a small 
 window into a users' favor/disfavor towards a product offering. Coming from product anlaysis and seeing this limitation,
-I wanted to get a more comprehensive view on user's response to a product/updated features.
+I wanted to get a more comprehensive view on users' response to a product/updated features.
 
 # Personal Data Growth/Fun Lessons
 
 ### Data Collection
 I had no idea this project would be so interesting! Starting from data collection, I bumped into this awesome, aspiring DS' 
-repo called Complete [Life Cycle of a Data Science Project](https://github.com/achuthasubhash/Complete-Life-Cycle-of-a-Data-Science-Project). 
-This began my introduction to scraping web data. Now I have a better understanding of Data Engineers' jobs and I have some
-autonomy now if I worked on a lean team. Instead of working off clean, crafted data from Kaggle, I had the power to pick 
-my sources and have a better understanding on why data was wonky because I was the one who retrieved the data.
+repo called [Complete Life Cycle of a Data Science Project](https://github.com/achuthasubhash/Complete-Life-Cycle-of-a-Data-Science-Project). 
+This began my introduction to scraping web data. Now I have a better understanding of Data Engineers' jobs and can self-serve wben needing to 
+get data from the web. Instead of working off Kaggle-esque syntheized data, I had the power to pick 
+my sources and have a better understanding of why the data would be wonky because I was the one who retrieved the data.
+For this analysis, I specifically worked with YouTube and Reddit API's.
 
 ### Data Cleaning
-I never missed cleaning text data, but at the same time, it was good to get back into it since it's the closest data to getting a 
-pulse on users and also working with it can get tricky. So if I got familiar with it again, then I would be able to wrangle more 
-clean data such as financial data cleaned up by a data engineer. 
+Cleaning text data was a growth opportunity. It was good to get back into it since user comments are excellent signals to  
+get a pulse on users feedback. Though working with natural language can get tricky. So if I got familiar with it again, then I would be able to 
+wrangle cleaner data with ease. 
 
-While refamiliarizing myself, I got to learn about common social media cleanings - translating emoji's/slang and expanding 
+While refamiliarizing myself, I got to learn about advised social media text cleanings - translating emoji's/slang and expanding 
 abbreviations. This added a whole new layer of complexity to NLP wrangling, but was interesting to implement. 
 
 ### Sentiment Scoring
