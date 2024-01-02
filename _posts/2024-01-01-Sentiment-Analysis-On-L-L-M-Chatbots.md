@@ -1,10 +1,10 @@
 # Motivation
 
-It is not a surprise that OpenAI's ChatGPT was a highlight in 2023 ever since its release in November 2022. 
+It was not a surprise that OpenAI's ChatGPT was a highlight in 2023 ever since its release in November 2022. 
 I am a subscriber to Daliana Liu's Newsletter, The Data Scientist's Diary. In one of her blog posts called 
-"Data scientists' role in the age of LLMs (Large Language Models)" she said that even though LLM seems to be 
-a threat to the DS profession, there actually is a need for DS to measure LLM's performance. This was reassuring 
-since it seemed like LLM's/Generative AI are taking over the world.
+_"Data scientists' role in the age of LLMs (Large Language Models)"_ she said that even though LLMs seems to be 
+a threat to the Data Scientist (DS) profession, there actually is a need for DS to measure LLMs' performance. 
+This was reassuring since it seemed like LLMs/Generative AI are taking over the world.
 
 And as a Data Scientist, [defining metrics](https://data-chef.notion.site/Metric-Overview-fe3202bb07624dde85d2d1d8aee3fc8d) 
 are key to ensuring that a business is aligned with its mission statement defined through metrics of success.
