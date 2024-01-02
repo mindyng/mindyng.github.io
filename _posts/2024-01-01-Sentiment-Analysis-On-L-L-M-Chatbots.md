@@ -49,11 +49,17 @@ wrangle cleaner data with ease.
 While refamiliarizing myself, I got to learn about advised social media text cleanings - translating emojis/slang and expanding 
 abbreviations. This added a whole new layer of complexity to NLP wrangling, but was interesting to implement. 
 
-Below from top to bottom we see cleaning of html tags, then emojis being translated and social media abbreviations such as 'lol' being expanded.
+Below are the steps I took to clean up the original comment text from YouTube and Reddit.
+
+Cleaning HTML tags:
 
 ![html](/assets/images/html.png)
 
+Translated Emojis:
+
 ![emojis](/assets/images/emojis.png)
+
+Expanded social media abbreviations such as 'lol':
 
 ![lol](/assets/images/lol_abbreviation.png)
 
