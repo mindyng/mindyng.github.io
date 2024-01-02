@@ -101,7 +101,7 @@ Bivariate Heatmap Comparing Comment Published Month and Comment Sentiment:
 
 However, the visualization that answered the goal for this analysis was ScatterText. What follows explains why.
 
-Discovering ScatterText was a game changer! It helped me achieve my original goal of graphing something interactive/more complex
+Discovering [ScatterText](https://github.com/JasonKessler/scattertext/blob/master/README.md) was a game changer! It helped me achieve my original goal of graphing something interactive/more complex
 than what I have accomplished with Plotly libraries. Although using D3.js was the original plan, ScatterText helped me segregate words by sentiment - negative and positive in general (middle axis) and in opposing groups (top and bottom portions)! 
 For this analysis, the opposing groups were ChatGPT and Pi. The sentiment segregation were not simply into positive and negative groups, but with the added y-axis for chatbot, able to see which unigram positive/negative words were associated
 with each chatbot. 
