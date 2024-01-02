@@ -49,8 +49,8 @@ wrangle cleaner data with ease.
 While refamiliarizing myself, I got to learn about advised social media text cleanings - translating emojis/slang and expanding 
 abbreviations. This added a whole new layer of complexity to NLP wrangling, but was interesting to implement. 
 
-Below were the steps I took to clean up the original comment text from YouTube and Reddit. To see the differences, compare ```text```
-column to `cleaned_text` column.
+Below were the steps I took to clean up the original comment text from YouTube and Reddit. To see the differences, compare `text`
+column to `clean_text` column.
 
 Cleaned HTML tags:
 
@@ -67,21 +67,59 @@ Expanded social media abbreviations such as 'lol':
 ### Sentiment Scoring
 This was a really cool experiment as I tested different sentiment libraries: Vader, Hugging Face's Happy Transformer, TextBlob
 and even Google's NL API. I ended up choosing Vader because it specialized in social media data (could handle emoji's and
-slang), but also Happy Transformer and Google's NL API lacked context window (did not allow for large commments) and TextBlob 
+slang), but also Happy Transformer and Google's NL API lacked huge context window (did not allow for large commments). And TextBlob 
 lacked accuracy when it came to sentiment scoring.
 
 ### Visualization
-When it came to graphing sentiment, I had to lead with questions that were specifically tied to sentiment. The goal was to extract
-words/phrases that were tied to metrics of success and broken down by sentiment. Then would enable sentiment mapping to features 
+When it came to graphing sentiment, I had to lead with questions that were specifically tied to sentiment of chatbots. The goal was to extract
+words/phrases that were tied to the metrics of success broken down by sentiment. Then helped with sentiment mapping to features 
 that had the most ROI.
 
 Realized context was king since unigram and even trigram wordclouds and bar charts lacked signal.
 
-Discovering ScatterText was a game changer and helped me achieve my original goal of graphing something interactive/more complex
-than what I can accomplish with Plotly libraries. Although D3.js was the original plan, ScatterText helped me segregate words by sentiment - not just negative, positive and neutral. It allowed me to have a more complex matrix that so I could compare two different chatbots in one: ChatGPT and Pi. 
+So I quickly moved onto other graphs that were tangential exploratory questions in general. They are pictured below.
 
-Another cool thing I wanted to do was topic modeling which I was able to achieve using LSA and t-SNE (visualization helper with high dimensional data). As mentioned before, unigrm/trigrams were not providing enough user signal that spoke of chatbot features, so I thought looking at data at a higher level would be better. I wanted to look at reasons tied to product feature for different sentiments. And LDA helped drive topics and t-SNE helped reduce vectors into a more interpretable graph. Topics and their popularity were visible as well as its proximity/relationship to other topics.
+Sentiment Time Series:
+
+![time_series](/assets/images/time_series.png)
+
+Sentiment Boxplot by Chat Bot:
+
+![boxplot](/assets/images/sentiment_boxplot.png)
+
+Comment Length vs Sentiment:
+
+![comment_length](/assets/images/comment_length.png)
+
+Like Count vs Sentiment:
+
+![like_counts](/assets/images/like_counts.png)
+
+Bivariate Heatmap Comparing Comment Published Month and Comment Sentiment:
+
+![jointplot](/assets/images/overall_jointplot.png)
+
+However, the visualization that answered the goal for this analysis was ScatterText. What follows explains why.
+
+Discovering ScatterText was a game changer! It helped me achieve my original goal of graphing something interactive/more complex
+than what I have accomplished with Plotly libraries. Although using D3.js was the original plan, ScatterText helped me segregate words by sentiment - negative and positive in general (middle axis) and in opposing groups (top and bottom portions)! 
+For this analysis, the opposing groups were ChatGPT and Pi. The sentiment segregation were not simply into positive and negative groups, but with the added y-axis for chatbot, able to see which unigram positive/negative words were associated
+with each chatbot. 
+
+![scattertext](/assets/images/scattertext.png)
+
+Last thing to note about the amazing ScatterText was the ability to use a search bar to find any term that appeared as a major unigram in a chatbot/sentiment. In the picture below, I searched for `chat` and all the comments that contained the word showed up. So cool!
+
+![search_scattertext](/assets/images/search_scattertext.png)
+
+I also wanted to perform some topic modeling. I used Latent Semantic Analysis (LSA). The core idea is to take a matrix of documents and terms and try to decompose it into separate two matrices – A document-topic matrix. A topic-term matrix.
+As you could probably tell, even with the small dataset, this created a high dimensional dataset. In order to reduce it for visualization purposes, t-SNE was used. Topics and their popularity were visible as well as its proximity/relationship to other topics. As mentioned before, unigram/trigrams were not providing enough user signal that spoke of chatbot features, so I thought looking at data at a higher level would be better. And this accomplished the job given needed to know the data for context to interpet the results (e.g. `'degoogle'`).
+
+![topics](/assets/images/topic_clustering.png)
 
 # Next iteration:
-* Try to get get a filter to get comments that speak on topics surrounding metrics of succcess.
-* Add feature release log to time series graphs to directly compare sentiment to new features coming out.
+* More data from various platforms such as LinkedIn/Substack
+* Add chatbot feature release dates to time series graphs to directly compare sentiment to new feature launches
+* Bigrams/Trigrams/notable noun chunks for ScatterText
+* Sentiment color for LSA clustering graph
+
