@@ -49,9 +49,10 @@ wrangle cleaner data with ease.
 While refamiliarizing myself, I got to learn about advised social media text cleanings - translating emojis/slang and expanding 
 abbreviations. This added a whole new layer of complexity to NLP wrangling, but was interesting to implement. 
 
-Below are the steps I took to clean up the original comment text from YouTube and Reddit.
+Below were the steps I took to clean up the original comment text from YouTube and Reddit. To see the differences, compare ```text```
+column to `cleaned_text` column.
 
-Cleaning HTML tags:
+Cleaned HTML tags:
 
 ![html](/assets/images/html.png)
 
