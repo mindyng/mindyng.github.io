@@ -46,8 +46,16 @@ Cleaning text data was a growth opportunity. It was good to get back into it sin
 get a pulse on users feedback. Though working with natural language can get tricky. So if I got familiar with it again, then I would be able to 
 wrangle cleaner data with ease. 
 
-While refamiliarizing myself, I got to learn about advised social media text cleanings - translating emoji's/slang and expanding 
+While refamiliarizing myself, I got to learn about advised social media text cleanings - translating emojis/slang and expanding 
 abbreviations. This added a whole new layer of complexity to NLP wrangling, but was interesting to implement. 
+
+Below from top to bottom we see cleaning of html tags, then emojis being translated and social media abbreviations such as 'lol' being expanded.
+
+![html](/assets/images/html.png)
+
+![emojis](/assets/images/emojis.png)
+
+![lol](/assets/images/lol_abbreviation.png)
 
 ### Sentiment Scoring
 This was a really cool experiment as I tested different sentiment libraries: Vader, Hugging Face's Happy Transformer, TextBlob
