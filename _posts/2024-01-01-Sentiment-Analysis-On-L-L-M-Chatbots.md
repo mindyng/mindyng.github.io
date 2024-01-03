@@ -9,7 +9,7 @@ This was reassuring since it seemed like LLMs/Generative AI are taking over the 
 And as a Data Scientist, [defining metrics](https://data-chef.notion.site/Metric-Overview-fe3202bb07624dde85d2d1d8aee3fc8d) 
 are key to ensuring that a business is aligned with its mission statement.
 
-# Business Recommendations
+# Business Insights
 
 After performing Exploratory Data Analysis (EDA), wrangling dirty API/NLP data, I was able to determine that
 the overall sentiment on ChatGPT was mostly positive, as is evident from news/social media. What was surprising was
@@ -22,14 +22,19 @@ Caveat about conclusion is on limited sample size and not having even sampling f
 chatter on social media about ChatGPT, but there could have been more data scraping for other chat bots. Imbalanced data between chatbots could easily skew conclusions as sentiment per chatbot. One
 workaround is to do sentiment by percentage of population. 
 
-# [Code](https://github.com/mindyng/2023-Business-Projects/blob/main/sentiment-analysis-on-llm-chatbots.ipynb)
-
-# Business Insights
-
 Another motivation behind doing this sentiment analysis was to have something to complement the usual A/B tests. From my 
 experience and common web analyses, user behvior is just measured by their actions.  This can only provide a small 
 window into a users' favor/disfavor towards a product offering. Coming from product anlaysis and seeing this limitation,
 I wanted to get a more comprehensive view on users' response to a product/updated features.
+
+# Business Recommendations
+
+Given ChatGPT and Pi's popularity, competition remains stiff. This is not including Bard and Bing Chat/Co-Pilot who have a lot of runway. Competition breeds 
+innovation. Doing this analysis on user comments has reminded me that YouTube and Reddit are great places to see what is best to work on, not just examining past 
+launches and peforming descriptive statistics. Predictive measures can be taken as well. And the ones who seek out the best next move and build fast
+will triumph and become the industry leader and experience higher user adoption and retention.
+
+# [Code](https://github.com/mindyng/2023-Business-Projects/blob/main/sentiment-analysis-on-llm-chatbots.ipynb)
 
 # Personal Data Growth/Fun Lessons
 
