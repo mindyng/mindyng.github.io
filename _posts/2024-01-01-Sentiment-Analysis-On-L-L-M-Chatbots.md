@@ -124,6 +124,7 @@ As you could probably tell, even with the small dataset, this created a high dim
 
 # Next iteration:
 * More data from various platforms such as LinkedIn/Substack
+* Extracting aspects from comments that describe chatbot features ([aspect-based sentiment analysis](https://www.cambridge.org/core/books/abs/sentiment-analysis/aspect-and-entity-extraction/2C82C8F7EEB7FAD9C5922DED60F77E60))
 * Add chatbot feature release dates to time series graphs to directly compare sentiment to new feature launches
 * Bigrams/Trigrams/notable noun chunks for ScatterText
 * Sentiment color for LSA clustering graph
