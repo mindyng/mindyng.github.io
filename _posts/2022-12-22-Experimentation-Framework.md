@@ -16,7 +16,7 @@ to add acceptance criteria for new product feature roll out.
 ## Analysis Approach:
 
 1. Design experiment
-2. Collect and Papare Data
+2. Collect and Prepare Data
 3. Visualize Results
 4. Test Hypothesis
 5. Conclusion/Recommendation
