@@ -34,7 +34,7 @@ innovation. Doing this analysis on user comments has reminded me that YouTube an
 launches and peforming descriptive statistics. Predictive measures can be taken as well. And the ones who seek out the best next move and build fast
 will triumph and become the industry leader and experience higher user adoption and retention.
 
-# [Code](https://nbviewer.org/github/mindyng/2023-Business-Projects/blob/main/sentiment-analysis-on-llm-chatbots.ipynb)
+# [Code](https://nbviewer.org/github/mindyng/2023-Business-Projects/blob/main/sentiment-analysis-on-llm-chatbots.ipynb](https://nbviewer.org/github/mindyng/2023-Business-Projects/blob/main/SaaS/projects/sentiment-analysis-on-llm-chatbots.ipynb)
 
 # Personal Data Growth/Fun Lessons
 
