@@ -18,12 +18,12 @@ The way I approached the analysis was to start at high-level and then go down to
 Based Sentiment Analysis. 
 
 When extracting the most talked about topics from the conference, it turned out that an Apple presenter using competitor's Samsung Notes app
-to present was highly joked about. Though noise, did give some insight on what is a great Notes app even if it is not made by company you work for (:joy: LOL). 
+to present was highly joked about. Though noise, did give some insight on what is a great Notes app even if it is not made by company you work for 😂 . 
 Despite this top topic, still able to extract much on what people were buzzing about:
 
 <img width="1300" alt="Screenshot 2024-07-14 at 9 39 19 AM" src="https://github.com/user-attachments/assets/9f1612de-5610-4528-bac7-d59e4657c87d">
 
-We see here that the most intriguing things were: Siri's upgrade, iPad calculator app and of course their AI aka 'Apple Intelligence' (:joy: LOL) integrations.
+We see here that the most intriguing things were: Siri's upgrade, iPad calculator app and of course their AI aka 'Apple Intelligence' 😂 integrations.
 At the same time, we see that there were some underwhelming sentiments regarding upgrades applied to non-15 base models only, icons/widgets/homescreen personalization
 and Apple's brand in general when it comes to solving real problems and being a top innovator. 
 
