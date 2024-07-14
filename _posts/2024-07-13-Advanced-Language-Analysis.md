@@ -38,7 +38,7 @@ At the same time, the sample taken to test model accuracy was only 10 comments.
 
 <img width="1355" alt="Screenshot 2024-07-14 at 9 18 59 AM" src="https://github.com/user-attachments/assets/bc2af1a2-1ba7-4b1d-809f-a83fc3837d18">
 
-<img width="1353" alt="Screenshot 2024-07-14 at 9 19 18 AM" src="https://github.com/user-attachments/assets/0d2cc8c0-a396-480f-92fd-b2ae8ac96234">
+<img width="1365" alt="Screenshot 2024-07-14 at 1 55 57 PM" src="https://github.com/user-attachments/assets/21f4c897-9d98-43e8-8ace-523e93ffa6eb">
 
 Also, I compared YouTube versus Reddit engagement, average emotion and average sentiment. 
 
@@ -106,19 +106,19 @@ By taking these steps, Apple can improve its reputation, address negative sentim
 - First off, LLM's are versatile winners when it came to having to augment data by replacing words with synonyms and performing sentiment analysis on
 overall comments. Then again it has greater foundation of knowledge and bigger context window to handle nuanced/domain-specific questions.
 
-BERTopic is a library that really peeked my interest. Last time I tried topic modeling, it was messy and not helpful when using LDA. The difference
-is most likely due to BERTopic being transformer-embeddings based whereas LDA is based on probabilities. I enjoyed the visualizations that helped
-with interpretation.
+2. BERTopic is a library that really peeked my interest. Last time I tried topic modeling, it was messy and not helpful when using LDA. The difference is most likely due to BERTopic being transformer-embeddings based whereas LDA is based on probabilities. I enjoyed the visualizations that helped with interpretation. Below was the most fascinating one for me because it had the different topics and upon hovering and playing with the slider, you can examine different topic and words that make up the topics.
 
-When it came to determining customer feedback, there was the general approach where a whole comment was scored as positive, neutral and negative.
+<img width="756" alt="Screenshot 2024-07-14 at 1 54 43 PM" src="https://github.com/user-attachments/assets/e3a8cd12-1c96-4fdc-a5b0-c51104a69907">
+
+<img width="756" alt="Screenshot 2024-07-14 at 1 55 08 PM" src="https://github.com/user-attachments/assets/e2276b75-93f2-4914-b684-038bad9c6a9f">
+
+
+4. When it came to determining customer feedback, there was the general approach where a whole comment was scored as positive, neutral and negative.
 The sentiment seemed too broad and coarse so I went ahead and tried out an emotion classifier that scored comments into 6 different categories: 
 sadness, fear, anger, surprise, joy and love. This was better in theory, but when I audited it with my own review, the sentiment classifier was 20% correct,
 emotion classifier was 40% correct, PyABSA was 50% correct and Groq was 80% correct. 😀
 
-3. Last, but not least, I was so happy with using chatGPT 4o (omni) as a code helper (had couple more hiccups than preferred). However, it redeemed itself
-4. when I showed it an image of a table and asked for a non-standard visualization like a stacked bar chart. It produced a sunburst graph that I am quite
-5. fond of. I used it one time to showcase user journeys to a business stakeholder and he was impressed by how it captured the answer to his business
-6. question in a concise and sophisticated way. 🙂
+3. Last, but not least, I was so happy with using chatGPT 4o (omni) as a code helper (had couple more hiccups than preferred). However, it redeemed itself. When I showed it an image of a table and asked for a non-standard visualization like a stacked bar chart. It produced a sunburst graph that I am quite fond of. I used it one time to showcase user journeys to a business stakeholder and he was impressed by how it captured the answer to his business question in a concise and sophisticated way. 🙂
 
 # [Code and Comments Notebook](https://nbviewer.org/github/mindyng/2024-Business-Projects/blob/main/wwdc-2024-sentiment-analysis_final.ipynb) 
 
