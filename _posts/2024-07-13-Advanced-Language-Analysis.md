@@ -5,11 +5,10 @@ in their product offerings. So when Apple, known to be late in the AI front had 
 people's reactions.
 
 Given that I am writing this on a MacBook Pro and recently got an iPhone, I feel more inclined to be up-to-date with Apple's releases.
-I did have the option of just tracking Reddit's WWDC 2024 live megathread or watch [The Verge's](https://www.youtube.com/watch?v=sBXdyUA6A88) condensed version 
-of the conference, but that is not as fun as scraping the data and performing NLP analysis on people's reactions. :)
+I did have the option of just tracking Reddit's WWDC 2024 live megathread or watch [The Verge's condensed version 
+of the conference](https://www.youtube.com/watch?v=sBXdyUA6A88), but that is not as fun as scraping the data and performing NLP analysis on people's reactions. 😃
 
-Also, after performing [sentiment analysis on LLM chatbots](https://mindyng.github.io/blog/2024/01/01/Sentiment-Analysis-On-L-L-M-Chatbots), in future iterations, 
-I had wanted better topics generated as well as perform sentiment analysis on aspects versus overall comments. 
+Also, after performing [sentiment analysis on LLM chatbots](https://mindyng.github.io/blog/2024/01/01/Sentiment-Analysis-On-L-L-M-Chatbots), in future iterations, I had wanted better topics generated as well as perform sentiment analysis on aspects versus overall comments. 
 Lastly, I have been wanting to use a free, open-sourced LLM's API's to generate answers in my notebook.
 
 # Business Insights
@@ -18,21 +17,20 @@ The way I approached the analysis was to start at high-level and then go down to
 Based Sentiment Analysis. 
 
 When extracting the most talked about topics from the conference, it turned out that an Apple presenter using competitor's Samsung Notes app
-to present was highly joked about. Though noise, did give some insight on what is a great Notes app even if it is not made by company you work for 😂 . 
-Despite this top topic, still able to extract much on what people were buzzing about:
+to present was highly joked about. Though noise, this topic did give some insight on what is a great Notes app even if it was not made by the company 
+he worked for 😂 . Despite this top topic, I was still able to extract much on what people were buzzing about:
 
 <img width="1300" alt="Screenshot 2024-07-14 at 9 39 19 AM" src="https://github.com/user-attachments/assets/9f1612de-5610-4528-bac7-d59e4657c87d">
 
 We see here that the most intriguing things were: Siri's upgrade, iPad calculator app and of course their AI aka 'Apple Intelligence' 😂 integrations.
-At the same time, we see that there were some underwhelming sentiments regarding upgrades applied to non-15 base models only, icons/widgets/homescreen personalization
-and Apple's brand in general when it comes to solving real problems and being a top innovator. 
+At the same time, we see that there were some underwhelming sentiments regarding upgrades applied to non-15 base models only, icons/widgets/homescreen personalization and Apple's brand in general when it came to solving real problems and being a top innovator. 
 
-Three different approaches in customer feedback was taken: overall comment sentiment (positive, neutral or negative), overall commment emotion 
-(which was more granular in sentiment: sadness, fear, anger, surprise, joy and love), aspect based sentiment analysis and finally, on a smaller sample
-of comments- Large Language Model was used to determine overall comment sentiment (positive, neutral, negative).
+Three different approaches in analyzing customer feedback was taken: overall comment sentiment (positive, neutral or negative), overall commment emotion 
+(which was more granular in sentiment: sadness, fear, anger, surprise, joy or love), aspect based sentiment analysis and finally, on a smaller sample
+of comments- Fast Large Language Model (LLM) was used to determine overall comment sentiment (positive, neutral or negative).
 
-What was found that all 4 performed differently when it came to comparing their scoring with my own human review. LLM outperformed all other sentiment
-predictions, but could be done on a small sample. Overall, comments came from conference day and emotion was positive and did not decay with time. 
+What was found that all 4 performed differently when their scores were compared with my own human review. LLM outperformed all other sentiment
+predictions, but was only done on a small sample. Overall, comments came from conference day and emotion was positive and did not decay over time. 
 General sentiment and emotion trends are depicted below. Caveat is that sentiment model accuracy was 20% while emotion model accuracy was at 40%.
 At the same time, the sample taken to test model accuracy was only 10 comments.
 
@@ -40,11 +38,11 @@ At the same time, the sample taken to test model accuracy was only 10 comments.
 
 <img width="1365" alt="Screenshot 2024-07-14 at 1 55 57 PM" src="https://github.com/user-attachments/assets/21f4c897-9d98-43e8-8ace-523e93ffa6eb">
 
-Also, I compared YouTube versus Reddit engagement, average emotion and average sentiment. 
+Also, I compared YouTube versus Reddit engagement (number of likes), average emotion and average aspect sentiment. 
 
 <img width="737" alt="Screenshot 2024-07-14 at 9 32 05 AM" src="https://github.com/user-attachments/assets/4a631170-c23e-4e2a-8563-e8433628a989">
 
-YouTube was more popular with engagement most likely due to MKBHD channel, but other measurements need improvement.
+YouTube was more popular with engagement most likely due to MKBHD's channel, but other measurements need improvement.
 
 These coarse views, led me to pursue finer grain sentiment analysis with more precise sentiment scores. Aspect-Based Sentiment Analysis pulls out key 
 aspects from a comment and the sentiment tied to it.
@@ -57,15 +55,19 @@ At the center, we can see the most talked about topics across YouTube and Reddit
 their competitor, Samsung had negative sentiment mostly tied to it. However, things looked good with iPad only (most likely due to the impressive 
 Calculator app). There was positive sentiment for apple, but it was not the dominant emotion.
 
-It looks like from the WWDC conference, iphone, iPad, iOS, android/Samsung (notes), app and features were the most talked about topics. Looks like 
-Apple needs to work on their reputation even after catch up with AI frontier.
+It looks like from the WWDC conference, iPhone, iPad, iOS, Android/Samsung (notes), app and features were the most talked about topics. Looks like 
+Apple needs to work on their reputation even after catching up on the AI front.
 
-# Business Recommendations
+# Business Recommendations 
+
+In general:
 
 1. Apple needs to be more of a risk taker
 2. Be an innovator and not a copier
-3. Research problems people are actually having and solving them
-4. Build a watertight strategy and execture feature release faster
+3. Research problems people are actually having and solve them
+4. Build a watertight strategy and execute feature releases faster
+
+More specifically:
 
 Based on the sentiment analysis findings from the WWDC conference, here are some business recommendations for Apple to improve their reputation and address the feedback received:
 
@@ -103,30 +105,25 @@ By taking these steps, Apple can improve its reputation, address negative sentim
 # Personal Growth as Data Professional/Fun Lessons
 
 1. LLM API and workarounds (data augmentation, sentiment classification)
-- First off, LLM's are versatile winners when it came to having to augment data by replacing words with synonyms and performing sentiment analysis on
+First off, LLM's are versatile winners when it came to having to augment data by replacing words with synonyms and performing sentiment analysis on
 overall comments. Then again it has greater foundation of knowledge and bigger context window to handle nuanced/domain-specific questions.
 
-2. BERTopic is a library that really peeked my interest. Last time I tried topic modeling, it was messy and not helpful when using LDA. The difference is most likely due to BERTopic being transformer-embeddings based whereas LDA is based on probabilities. I enjoyed the visualizations that helped with interpretation. Below was the most fascinating one for me because it had the different topics and upon hovering and playing with the slider, you can examine different topic and words that make up the topics.
+2. BERTopic is a library that really peaked my interest. Last time I tried topic modeling, it was messy and not helpful when using LDA. The difference is most likely due to BERTopic being transformer embeddings based whereas LDA is based on probabilities. I enjoyed the visualizations that helped with interpretation. Below was the most fascinating one for me because it had the different topics and upon hovering and playing with the slider, you can examine different topic and words that make up the topics.
 
-<img width="756" alt="Screenshot 2024-07-14 at 1 54 43 PM" src="https://github.com/user-attachments/assets/e3a8cd12-1c96-4fdc-a5b0-c51104a69907">
+<img width="766" alt="Screenshot 2024-07-14 at 9 54 12 PM" src="https://github.com/user-attachments/assets/b2ccfa88-7cea-46d6-aff8-2411483365c7">
 
-<img width="756" alt="Screenshot 2024-07-14 at 1 55 08 PM" src="https://github.com/user-attachments/assets/e2276b75-93f2-4914-b684-038bad9c6a9f">
+4. When it came to determining customer feedback sentiment, first pass involved a general approach where a whole comment was scored as positive, neutral or negative. The sentiment seemed too broad and coarse so I went ahead and tried out an emotion classifier that scored comments into 6 different categories: 
+sadness, fear, anger, surprise, joy and love. This was better in theory, but when I audited it with my own sentiment scores, the overall sentiment classifier was 20% correct, the emotion classifier was 40% correct, PyABSA was 50% correct and Groq was 80% correct. 😀
 
-
-4. When it came to determining customer feedback, there was the general approach where a whole comment was scored as positive, neutral and negative.
-The sentiment seemed too broad and coarse so I went ahead and tried out an emotion classifier that scored comments into 6 different categories: 
-sadness, fear, anger, surprise, joy and love. This was better in theory, but when I audited it with my own review, the sentiment classifier was 20% correct,
-emotion classifier was 40% correct, PyABSA was 50% correct and Groq was 80% correct. 😀
-
-3. Last, but not least, I was so happy with using chatGPT 4o (omni) as a code helper (had couple more hiccups than preferred). However, it redeemed itself. When I showed it an image of a table and asked for a non-standard visualization like a stacked bar chart. It produced a sunburst graph that I am quite fond of. I used it one time to showcase user journeys to a business stakeholder and he was impressed by how it captured the answer to his business question in a concise and sophisticated way. 🙂
+3. Last, but not least, I was so happy with using chatGPT 4o (omni) as a code helper (even though had couple more hiccups than preferred). However, it redeemed itself. When I showed it an image of a table and asked for a non-standard visualization like a stacked bar chart, it produced code for a sunburst graph. I am quite fond of these graphs because I used it one time to showcase user journeys to a business stakeholder and I like how it captured the answer to his business question in a concise and sophisticated way. 🙂
 
 # [Code and Comments Notebook](https://nbviewer.org/github/mindyng/2024-Business-Projects/blob/main/wwdc-2024-sentiment-analysis_final.ipynb) 
 
 # Next Iteration
-1. Data Augmentation with Groq
+1. Data Augmentation with LLM/Groq
 2. Sentiment/Emotion Classification using HuggingFace models, but fine-tuned on YouTube/Reddit data for greater prediction accuracy
-3. Groqcloud at scale. It is fast and free so limit on what it can take is understandable. Try to see if I can hit API differently, e.g. >100 rows
-4. Named Entity Recognition (NER) for deeper analysis on for things such as:
+3. Groq prediction at scale. It is fast and free so limit on what it can take in is understandable. I will try to see if I can hit API differently, e.g. >100 rows at one time
+4. Named Entity Recognition (NER) for deeper analysis onnthings such as:
 * Brand Monitoring:
 
 Track mentions of Apple, Samsung, and their products across various sources.
