@@ -123,7 +123,7 @@ sadness, fear, anger, surprise, joy and love. This was better in theory, but whe
 1. Data Augmentation with LLM/Groq
 2. Sentiment/Emotion Classification using HuggingFace models, but fine-tuned on YouTube/Reddit data for greater prediction accuracy
 3. Groq prediction at scale. It is fast and free so limit on what it can take in is understandable. I will try to see if I can hit API differently, e.g. >100 rows at one time
-4. Named Entity Recognition (NER) for deeper analysis onnthings such as:
+4. Named Entity Recognition (NER) for deeper analysis on things such as:
 * Brand Monitoring:
 
 Track mentions of Apple, Samsung, and their products across various sources.
