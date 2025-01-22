@@ -35,13 +35,12 @@ Before generating the streamlit script, I reviewed the Visual Display of Quantit
 
 It was really cool going through the code and being able to not only have high-level metrics at the top such as total revenue, online sales and AI impact rate, but also different tabs to drill-down on the metrics. It was also fun being able to customize sidebar date and customer segment filters to make the dashboard more dynamic, interactive - user-friendly. This is what stakeholders like to do as they are trying to see the business at different angles and dimensions.
 
-<img width="1634" alt="Screenshot 2025-01-21 at 10 38 38 PM" src="https://github.com/user-attachments/assets/b095bf68-7545-4066-bed5-45e6f68e7eab" />
+![adv_seph_dash](/assets/videos/adv_seph_dash.mov)
 
-<img width="1857" alt="Screenshot 2025-01-21 at 10 39 15 PM" src="https://github.com/user-attachments/assets/6703359d-c734-4b49-ad22-2aeffd20983c" />
-
-<img width="1841" alt="Screenshot 2025-01-21 at 10 39 29 PM" src="https://github.com/user-attachments/assets/d145ac36-04f8-4504-b835-927510b93351" />
-
-<img width="1856" alt="Screenshot 2025-01-21 at 10 39 43 PM" src="https://github.com/user-attachments/assets/7d93825d-31c3-40c8-8859-0dcf42eb10fe" />
+![adv_seph_dash_perf](/assets/images/adv_seph_dash_perf.png)
+![adv_seph_dash_cust](/assets/images/adv_seph_dash_cust.png)
+![adv_seph_dash_digital](/assets/images/adv_seph_dash_digital.png)
+![adv_seph_dash_anomaly](/assets/images/adv_seph_dash_anomaly.png)
 
 ## Exploratory/Predictive Analytics:
 
@@ -99,10 +98,9 @@ Most of the technical bottlenecks were due to pre-trained models, undefined para
 
 Most interesting models to work with were those that took in text and images because I was able to see the interaction between two different input's. For example, one model was able to determine brand consistency given images and list of criteria used to assess if a picture meets the bar for a product marketing launch. Second example of mixed input's was given an image of an eyeshadow palette and a question about it, a Virtual Beauty Assistant would give their opinion. That was very interesting given my prior experiences were opinions from Sephora beauty experts and various Reddit comments.
 
-<img width="1129" alt="Screenshot 2025-01-21 at 10 22 48 PM" src="https://github.com/user-attachments/assets/e4a8d62e-4bd9-47fc-a564-59a0a28f0a53" />
+![eyeshadow_palette_rec](/assets/images/eyeshadow_palette_rec.png)
 
-<img width="1124" alt="Screenshot 2025-01-21 at 10 23 16 PM" src="https://github.com/user-attachments/assets/7bbcb7ab-1ff2-4826-9eac-550677c5a5d6" />
-
+![branding_quality](/assets/images/branding_quality.png)
 
 I noticed that many LLM models had some crude/almost-there output's because the models needed be trained on beauty/Sephora data and/or model needed to be fine-tuned more.
 
