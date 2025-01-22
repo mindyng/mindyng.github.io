@@ -35,8 +35,6 @@ Before generating the streamlit script, I reviewed the Visual Display of Quantit
 
 It was really cool going through the code and being able to not only have high-level metrics at the top such as total revenue, online sales and AI impact rate, but also different tabs to drill-down on the metrics. It was also fun being able to customize sidebar date and customer segment filters to make the dashboard more dynamic, interactive - user-friendly. This is what stakeholders like to do as they are trying to see the business at different angles and dimensions.
 
-![adv_seph_dash_red](/assets/videos/adv_seph_dash_red.mov)
-
 ![adv_seph_dash_perf](/assets/images/adv_seph_dash_perf.png)
 ![adv_seph_dash_cust](/assets/images/adv_seph_dash_cust.png)
 ![adv_seph_dash_digital](/assets/images/adv_seph_dash_digital.png)
