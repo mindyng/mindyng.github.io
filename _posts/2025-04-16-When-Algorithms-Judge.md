@@ -6,7 +6,7 @@ course as well as Stanford's insightful and impressive "Intro to AI Alignment" c
 got accepted into Apart Lab Studio to flush out further my Hackathon team's idea! Following is a sneek peak into our blogpost that gives a peek into our Hackathon project and how we want to 
 further our research to make a huge impact in AI Alignment!_
 
-When Algorithms Judge: What we Learned from Examining LLM Decision-Making in the Legal Domain
+# When Algorithms Judge: What we Learned from Examining LLM Decision-Making in the Legal Domain
 
 By: May Reese, Markela Zeneli and Mindy Ng
 
