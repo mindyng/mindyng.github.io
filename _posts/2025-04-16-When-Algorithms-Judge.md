@@ -3,8 +3,8 @@ He went into how he used his statistical background to do LLM eval's, which led 
 Anthropic, I bumped into "How Difficult is AI Alignment? - Anthropic Research Salon". And the philosophy, talk about how the LLM should behave versus just building cool 
 agents, which has its value, sparked my interest. This then sent me down a whole rabbit hole with what is AI Alignment, bumping into BlueDot Impact's "AI Safety Fundamentals"
 course as well as Stanford's insightful and impressive "Intro to AI Alignment" course. I soon joined a Women in AI Safety Hackathon and now here I am, sharing with you that I 
-got accepted into Apart Lab Studio to flush out further my Hackathon team's idea! Following is a sneak peek into our blogpost about our Hackathon project and how we want to 
-further our research to make a huge impact in AI Alignment!_
+got accepted into Apart Lab Studio to flush out further my Hackathon team's idea! Following is a sneak peek into our Hackathon research project and how we want to make a 
+transformational impact in AI Alignment!_
 
 # When Algorithms Judge: What we Learned from Examining LLM Decision-Making in the Legal Domain
 
