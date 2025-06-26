@@ -22,15 +22,15 @@ The advent of LLMs represents a transformative leap in artificial intelligence, 
 
 ## The Emergence of LLM Dependency and Problematic Use
 * Defining Problematic AI Chatbot Use
- ** Unlike traditional behavioral dependencies such as gaming or social media use, which are often driven by novelty or fear of exclusion, LLM dependency is primarily influenced by factors such as instrumental success, perceived empathy, compassion and parasocial bonding. This distinction highlights the unique psychological dynamics at play in human-AI relationships.
+ - Unlike traditional behavioral dependencies such as gaming or social media use, which are often driven by novelty or fear of exclusion, LLM dependency is primarily influenced by factors such as instrumental success, perceived empathy, compassion and parasocial bonding. This distinction highlights the unique psychological dynamics at play in human-AI relationships.
 * Psychological and Neurological Underpinnings
-  * Dopamine levels increase causing high usage patterns, oxytocin possibly but not enough direct scientiic evidence
+  - Dopamine levels increase causing high usage patterns, oxytocin possibly but not enough direct scientiic evidence
 * Observed Consequences of Problematic Use
-  * Instances have been documented where emotional dependence on AI companions has led to "intense feelings of abandonment" or "heartbreak" when the AI's personality changes or becomes unavailable. This can exacerbate pre-existing feelings of loneliness, anxiety, or depression.
-  * Over-reliance on LLMs for decision-making can diminish users' critical thinking skills, potentially leading to an inability to make independent decisions when these tools are not accessible. Professionals, for example, have reported increased anxiety and pressure in critical decision-making contexts as a direct result of their dependency on AI systems.
-  * Individuals such as youth with low self-esteem, social anxiety, pre-existing loneliness, or neurodivergent individuals may find AI chatbots a safe and comforting alternative to human interaction, making them more vulnerable to developing unhealthy dependencies. If relationships are frayed and frontal lobe is not fully developed then chatbot-in-a-pocket offers artificial friendship.
-  * "low-friction" nature of AI interaction, coupled with its ability to provide instant gratification and validation, creates a compensatory mechanism that, while initially appearing beneficial, ultimately exacerbates pre-existing vulnerabilities and leads to a self-reinforcing cycle of dependence and social withdrawal. AI chatbots offer 24/7 companionship without the social effort, risk of rejection, or emotional labor inherent in human relationships.
-  * While initial chatbot use might appear to mitigate loneliness, longitudinal studies consistently demonstrate that higher daily usage correlates with increased loneliness and dependence.
+  - Instances have been documented where emotional dependence on AI companions has led to "intense feelings of abandonment" or "heartbreak" when the AI's personality changes or becomes unavailable. This can exacerbate pre-existing feelings of loneliness, anxiety, or depression.
+  - Over-reliance on LLMs for decision-making can diminish users' critical thinking skills, potentially leading to an inability to make independent decisions when these tools are not accessible. Professionals, for example, have reported increased anxiety and pressure in critical decision-making contexts as a direct result of their dependency on AI systems.
+  - Individuals such as youth with low self-esteem, social anxiety, pre-existing loneliness, or neurodivergent individuals may find AI chatbots a safe and comforting alternative to human interaction, making them more vulnerable to developing unhealthy dependencies. If relationships are frayed and frontal lobe is not fully developed then chatbot-in-a-pocket offers artificial friendship.
+  - "low-friction" nature of AI interaction, coupled with its ability to provide instant gratification and validation, creates a compensatory mechanism that, while initially appearing beneficial, ultimately exacerbates pre-existing vulnerabilities and leads to a self-reinforcing cycle of dependence and social withdrawal. AI chatbots offer 24/7 companionship without the social effort, risk of rejection, or emotional labor inherent in human relationships.
+  - While initial chatbot use might appear to mitigate loneliness, longitudinal studies consistently demonstrate that higher daily usage correlates with increased loneliness and dependence.
 
 # Methodology/Experiment Set-Up
 
@@ -335,7 +335,7 @@ From a societal impact perspective, seeing how accessible chatbots are now, I wo
 Also, people who say they [have no friends]((https://www.reddit.com/r/CharacterAI/comments/y949hb/understanding_how_cai_works/)) are advised not to use chatbots as a replacement for genuine connection with others.
 I did a quick search on [YouTube for a character.ai tutorial](https://www.youtube.com/watch?v=h6uA9k11ZrU) and within seconds of playing the video, the most
 popular character on the platform insults and has no bounadies with "physical interaction". This is what many of the youth are engaging with for long hours on end.
-The consequences to society are evident.
+The impact to society are evident.
 
 
 # Limitations
