@@ -22,7 +22,7 @@ The advent of LLMs represents a transformative leap in artificial intelligence, 
 
 ## The Emergence of LLM Dependency and Problematic Use
 * Defining Problematic AI Chatbot Use
-  * Unlike traditional behavioral dependencies such as gaming or social media use, which are often driven by novelty or fear of exclusion, LLM dependency is primarily influenced by factors such as instrumental success, perceived empathy, compassion and parasocial bonding. This distinction highlights the unique psychological dynamics at play in human-AI relationships.
+ ** Unlike traditional behavioral dependencies such as gaming or social media use, which are often driven by novelty or fear of exclusion, LLM dependency is primarily influenced by factors such as instrumental success, perceived empathy, compassion and parasocial bonding. This distinction highlights the unique psychological dynamics at play in human-AI relationships.
 * Psychological and Neurological Underpinnings
   * Dopamine levels increase causing high usage patterns, oxytocin possibly but not enough direct scientiic evidence
 * Observed Consequences of Problematic Use
