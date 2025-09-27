@@ -76,3 +76,77 @@ body.layout-post ol {
 body.layout-post li {
   margin: 0.3em 0;
 }
+
+/* === Blog Posts Only === */
+body.layout-post {
+  font-family: Georgia, "Times New Roman", serif; /* formal serif look */
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;   /* dark text for readability */
+  background-color: #fff; /* white background for print-like feel */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Paragraphs and lists inside blog posts */
+body.layout-post p,
+body.layout-post ul,
+body.layout-post ol,
+body.layout-post li {
+  font-size: 1em;
+  font-family: inherit;
+  line-height: 1.7;
+  color: inherit;
+  margin-bottom: 1em;
+}
+
+/* Headings inside blog posts */
+body.layout-post h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+body.layout-post h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+body.layout-post h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+body.layout-post h4,
+body.layout-post h5,
+body.layout-post h6 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 0.6em;
+  margin-bottom: 0.3em;
+}
+
+/* Lists */
+body.layout-post ul,
+body.layout-post ol {
+  margin-left: 2em;
+  padding-left: 0;
+}
+
+body.layout-post li {
+  margin: 0.4em 0;
+}
+
+/* Images inside blog posts */
+body.layout-post img {
+  display: block;
+  margin: 1.5em auto;
+  max-width: 100%;
+  height: auto;
+}
