@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 ---
 <h1>{{ page.title }}</h1>
@@ -6,4 +6,38 @@ layout: default
 
 <div class="post">
   {{ content }}
-</div>
+</div> -->
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+</head>
+<body class="layout-post">
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/cv">CV</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date_to_string }}</p>
+    <div class="post">
+      {{ content }}
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/mindyng85">LinkedIn</a></li>
+      <li><a href="mailto:mindyng88552@gmail.com">Email</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
