@@ -80,3 +80,13 @@ h4, h5, h6 {
   font-size: 1em;   /* same as body text */
   font-weight: bold;
 }
+
+/* Cleaner indentation for lists */
+ul, ol {
+  margin-left: 1.5em;   /* adjust spacing from the left edge */
+  padding-left: 0;      /* remove double indent */
+}
+
+li {
+  margin: 0.3em 0;      /* spacing between list items */
+}
