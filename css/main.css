@@ -36,56 +36,43 @@ img {
 .cv address, .cv p { font-size: 1.2em; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
 
-/* Set a consistent base font */
-body {
+/* Blog posts only */
+body.layout-post {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;  /* default size */
   line-height: 1.6;
-  color: #eaeaea;   /* adjust for your theme */
-  background-color: #111; /* adjust if you want dark mode like in your screenshot */
+  color: #eaeaea;   /* light text on dark background */
+  background-color: #111; /* dark mode background */
 }
 
-/* Ensure lists inherit the base font size */
-ul, ol, li {
+/* Lists, paragraphs inside blog posts */
+body.layout-post ul,
+body.layout-post ol,
+body.layout-post li,
+body.layout-post p {
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
 }
 
-/* Paragraphs */
-p {
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
-}
-
-/* Headings - markdown # -> <h1>, ## -> <h2>, etc. */
-h1 {
-  font-size: 2em;   /* biggest */
+/* Headings inside blog posts */
+body.layout-post h1 { font-size: 2em; font-weight: bold; }
+body.layout-post h2 { font-size: 1.5em; font-weight: bold; }
+body.layout-post h3 { font-size: 1.25em; font-weight: bold; }
+body.layout-post h4,
+body.layout-post h5,
+body.layout-post h6 {
+  font-size: 1em;
   font-weight: bold;
 }
 
-h2 {
-  font-size: 1.5em; /* second biggest */
-  font-weight: bold;
+/* Cleaner indentation for blog post lists */
+body.layout-post ul,
+body.layout-post ol {
+  margin-left: 1.5em;
+  padding-left: 0;
 }
 
-h3 {
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-h4, h5, h6 {
-  font-size: 1em;   /* same as body text */
-  font-weight: bold;
-}
-
-/* Cleaner indentation for lists */
-ul, ol {
-  margin-left: 1.5em;   /* adjust spacing from the left edge */
-  padding-left: 0;      /* remove double indent */
-}
-
-li {
-  margin: 0.3em 0;      /* spacing between list items */
+body.layout-post li {
+  margin: 0.3em 0;
 }
