@@ -35,3 +35,48 @@ img {
 .cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 .cv address, .cv p { font-size: 1.2em; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+
+
+/* Set a consistent base font */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;  /* default size */
+  line-height: 1.6;
+  color: #eaeaea;   /* adjust for your theme */
+  background-color: #111; /* adjust if you want dark mode like in your screenshot */
+}
+
+/* Ensure lists inherit the base font size */
+ul, ol, li {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* Paragraphs */
+p {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* Headings - markdown # -> <h1>, ## -> <h2>, etc. */
+h1 {
+  font-size: 2em;   /* biggest */
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em; /* second biggest */
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+h4, h5, h6 {
+  font-size: 1em;   /* same as body text */
+  font-weight: bold;
+}
