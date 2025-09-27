@@ -37,9 +37,9 @@ that lead to safe/unsafe LLM responses.
 * The 3D PCA analysis demonstrates that internal model representations exhibit distinct clustering patterns based on safety classifications. Key observations include:
   * Dimensional Separation: The visualization shows 5 distinct data points distributed across the first three principal components, with samples colored by their safety labels (0-4 scale). The spatial distribution suggests that:
 
-      a. Cluster Formation: Points with similar safety labels tend to occupy similar regions in the reduced dimensional space
-      b. Boundary Definition: Clear spatial separation exists between different safety categories, indicating that internal representations encode safety-relevant information
-      c. Dimensionality Reduction Effectiveness: The PCA successfully captures meaningful variance in the high-dimensional internal feature space
+     * Cluster Formation: Points with similar safety labels tend to occupy similar regions in the reduced dimensional space
+     * Boundary Definition: Clear spatial separation exists between different safety categories, indicating that internal representations encode safety-relevant information
+     * Dimensionality Reduction Effectiveness: The PCA successfully captures meaningful variance in the high-dimensional internal feature space
 
 Implications: This clustering behavior provides strong evidence that LLM internal states contain linearly separable safety-relevant information, supporting the hypothesis that safety responses can be predicted from model internals.
 
