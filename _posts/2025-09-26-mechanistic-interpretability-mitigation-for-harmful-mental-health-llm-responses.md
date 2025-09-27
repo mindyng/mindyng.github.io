@@ -151,14 +151,13 @@ The well-calibrated confidence scores (Figure 2) enable nuanced responses—high
 * Ethical Imperative:
 For mental health applications, the difference between reactive and proactive safety measures can be literally life-or-death. Internal-state monitoring represents not just a technical improvement, but an ethical obligation to protect vulnerable users from any exposure to potentially harmful content.
 
-# Limitations and Future Directions
-## Current Limitations
+# Limitations
 
 * Sample Size: The analysis is based on a limited number of samples (5 in PCA), which may not fully represent the complexity of real-world safety scenarios
 * Feature Interpretability: While I identify important features, their semantic meaning in the context of safety remains unclear
 * Generalization: Results may be specific to the particular model architecture and training data used
 
-## Future Research Directions
+# Future Research Directions
 
 * Mental Health-Specific Validation: Large-scale studies with mental health crisis scenarios to validate safety inference effectiveness in high-risk contexts
 * Crisis Indicator Integration: Development of specialized internal features that detect user vulnerability states and crisis indicators
