@@ -19,18 +19,17 @@ it from going to the user.
 # Methodology
 
 1. Create a small dataset of benign and mental health issue prompts.
-2. Use a popular mech interp LLM to generate responses as well as gather model internals from.
+2. Use a popular mech interp LLM to generate responses. On top of collecting responses, collect model internals that generate the responses.
 3. Use a small enough, but still sophisticated enough LLM to label responses as safe/harmful.
-4. Train a linear probe (logistic regressor) to learn statistical patterns between model internals
-that lead to safe/unsafe LLM responses.
+4. Train a linear probe (logistic regressor) to learn statistical patterns between model internals and safe/unsafe LLM responses.
 5. Use this linear probe in production so when fed model interals, can predict whether or not
-   a harmful LLM response would generate. If a harmful response is about to generated, it can
-   be stopped so that vulnerable users with mental health issues cannot be led astay.
+   a harmful LLM response would generate. If a harmful response is about to be generated, it can
+   be flagged and prevented from reaching vulnerable users with mental health issues.
 
-Dataset used to train linear probe:
+* Dataset used to train linear probe:
 ![responses_labels_internals](/assets/images/responses_labels_internals.png)
 
-Monitoring output after putting model into production to predict safety of LLM responses to mental health prompts:
+* After putting model into simulated production, monitoring output by predicting safety of LLM responses to mental health prompts:
 
 ![monitoring_output](/assets/images/monitoring_output.png)
 
@@ -40,8 +39,8 @@ Monitoring output after putting model into production to predict safety of LLM r
 
 ![PCA](/assets/images/mh_mech_interp_pca.png)
 
-* PCA Visualization Reveals Separable Safety Patterns
-* The 3D PCA analysis demonstrates that internal model representations exhibit distinct clustering patterns based on safety classifications. Key observations include:
+### PCA Visualization Reveals Separable Safety Patterns
+The 3D PCA analysis demonstrates that internal model representations exhibit distinct clustering patterns based on safety classifications. Key observations include:
   * Dimensional Separation: The visualization shows 5 distinct data points distributed across the first three principal components, with samples colored by their safety labels (0-4 scale). The spatial distribution suggests that:
 
      * Cluster Formation: Points with similar safety labels tend to occupy similar regions in the reduced dimensional space
@@ -54,8 +53,8 @@ Implications: This clustering behavior provides strong evidence that LLM interna
 
 ![safety_pred](/assets/images/mh_mech_interp_safety_pred_conf.png)
 
-* Prediction Confidence Distribution
-* The Safety Prediction Confidence Analysis reveals critical insights about model reliability:
+### Prediction Confidence Distribution
+The Safety Prediction Confidence Analysis reveals critical insights about model reliability:
   * Probability Distribution Patterns:
 
     * Bimodal Distribution: The safety probability distribution shows concentration at the extremes (near 0.2-0.3 and 0.7-0.8), indicating the model makes confident predictions rather than uncertain ones
@@ -77,7 +76,7 @@ Clinical Significance: The strong calibration implies that confidence scores can
 
 ![PCA](/assets/images/mh_mech_interp_feat_imp_analysis.png)
 
-* Internal Feature Significance
+### Internal Feature Significance
 The Feature Importance Analysis provides insights into which model components drive safety predictions:
 * Magnitude Distribution:
 
@@ -95,60 +94,62 @@ Feature Selection Implications: The heterogeneous magnitude distribution suggest
 
 # Discussion
 ### Practical Implications for Safety Inference
-* Feasibility Assessment
-- Based on the comprehensive analysis, I conclude that LLM safety responses can indeed be reliably inferred from model internals:
+#### Feasibility Assessment
+Based on the comprehensive analysis, I conclude that LLM safety responses can indeed be reliably inferred from model internals:
 
   * Separability: The PCA analysis demonstrates clear clustering of safety-related internal states
   * Reliability: High prediction confidence and good calibration indicate trustworthy safety assessments
   * Efficiency: The identification of high-importance features suggests computationally efficient safety monitoring is possible
 
-* Real-World Applications
-- Deployment Strategies:
+#### Real-World Applications
+Deployment Strategies:
 
   *  Real-time Monitoring: The fast inference capability from internal states enables real-time safety filtering
   *  Confidence Thresholding: Well-calibrated probabilities allow for adjustable safety thresholds based on application requirements
   *  Feature-based Optimization: Selective use of high-importance features could reduce computational overhead
 
-* Risk Management:
+#### Risk Management:
 
   *  The bimodal confidence distribution suggests the model can effectively identify both clearly safe and clearly harmful content
   *  The calibrated confidence scores provide quantitative risk assessment for borderline cases
 
 ### Critical Application: Mental Health Crisis Intervention
-* Pre-emptive Safety for Vulnerable Populations
+#### Pre-emptive Safety for Vulnerable Populations
 The ability to infer safety from internal representations becomes particularly crucial when LLMs interact with users experiencing mental health crises. Traditional output-based safety filtering operates reactively—harmful content is identified only after generation, potentially exposing vulnerable users to dangerous suggestions before intervention occurs.
 
-* Mental Health Context Vulnerabilities:
+- Mental Health Context Vulnerabilities:
 
   *  Users in mental health crises may be more susceptible to harmful suggestions
   *  Even brief exposure to unsafe content (suicide methods, self-harm instructions, crisis escalation) can have immediate dangerous consequences
   *  Traditional content moderation delays create windows of risk that are unacceptable in mental health contexts
 
-* Proactive Risk Mitigation Through Internal Monitoring
+- Proactive Risk Mitigation Through Internal Monitoring
+
 Our findings demonstrate that internal-state-based safety inference enables proactive intervention before harmful content reaches users:
 
 * Pre-generation Intervention:
 
-  *  The clear clustering patterns in internal representations (Figure 1) show safety determination occurs within the model's reasoning process, not just at output
-  *  High confidence predictions (Figure 2) enable immediate intervention when internal states indicate potential harm generation
-  *  Feature-based monitoring (Figure 3) allows real-time assessment during the generation process itself
+  *  The clear clustering patterns in internal representations show safety determination occurs within the model's reasoning process, not just at output
+  *  High confidence predictions enable immediate intervention when internal states indicate potential harm generation
+  *  Feature-based monitoring allows real-time assessment during the generation process itself
 
-* Clinical Safety Benefits:
+#### Clinical Safety Benefits:
 
   *  Zero-exposure Protection: Users never receive harmful content, eliminating the risk window inherent in post-generation filtering
   *  Context-aware Safety: Internal representations capture the model's understanding of user vulnerability and crisis indicators
   *  Immediate Intervention: Safety systems can trigger alternative response pathways (crisis resources, professional referrals) before harmful content generation completes
 
-* Implementation for Mental Health Applications
-** Crisis-aware Deployment Strategy:
+#### Implementation for Mental Health Applications
+Crisis-aware Deployment Strategy:
 
   *  Heightened Sensitivity: Lower safety thresholds for users exhibiting crisis indicators
   *  Alternative Response Generation: When unsafe internals are detected, immediately redirect to verified mental health resources
   *  Professional Handoff Protocols: Seamless transition to human crisis counselors when internal states indicate severe risk
 
-* Real-world Impact:
-The well-calibrated confidence scores (Figure 2) enable nuanced responses—high-confidence harmful predictions can trigger immediate crisis protocols, while moderate-confidence cases can prompt additional safety checks or gentle redirection to appropriate resources.
-* Ethical Imperative:
+Real-world Impact:
+The well-calibrated confidence scores enable nuanced responses high-confidence harmful predictions to trigger immediate crisis protocols, while moderate-confidence cases can prompt additional safety checks or gentle redirection to appropriate resources.
+
+Ethical Imperative:
 For mental health applications, the difference between reactive and proactive safety measures can be literally life-or-death. Internal-state monitoring represents not just a technical improvement, but an ethical obligation to protect vulnerable users from any exposure to potentially harmful content.
 
 # Limitations
