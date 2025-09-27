@@ -36,117 +36,56 @@ img {
 .cv address, .cv p { font-size: 1.2em; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
 
-/* Blog posts only */
-body.layout-post {
+/* Set a consistent base font */
+body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;  /* default size */
   line-height: 1.6;
-  color: #eaeaea;   /* light text on dark background */
-  background-color: #111; /* dark mode background */
+  color: #eaeaea;   /* adjust for your theme */
+  background-color: #111; /* adjust if you want dark mode like in your screenshot */
 }
 
-/* Lists, paragraphs inside blog posts */
-body.layout-post ul,
-body.layout-post ol,
-body.layout-post li,
-body.layout-post p {
+/* Ensure lists inherit the base font size */
+ul, ol, li {
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
 }
 
-/* Headings inside blog posts */
-body.layout-post h1 { font-size: 2em; font-weight: bold; }
-body.layout-post h2 { font-size: 1.5em; font-weight: bold; }
-body.layout-post h3 { font-size: 1.25em; font-weight: bold; }
-body.layout-post h4,
-body.layout-post h5,
-body.layout-post h6 {
-  font-size: 1em;
-  font-weight: bold;
-}
-
-/* Cleaner indentation for blog post lists */
-body.layout-post ul,
-body.layout-post ol {
-  margin-left: 1.5em;
-  padding-left: 0;
-}
-
-body.layout-post li {
-  margin: 0.3em 0;
-}
-
-/* === Blog Posts Only === */
-body.layout-post {
-  font-family: Georgia, "Times New Roman", serif; /* formal serif look */
-  font-size: 18px;
-  line-height: 1.7;
-  color: #222;   /* dark text for readability */
-  background-color: #fff; /* white background for print-like feel */
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-/* Paragraphs and lists inside blog posts */
-body.layout-post p,
-body.layout-post ul,
-body.layout-post ol,
-body.layout-post li {
-  font-size: 1em;
+/* Paragraphs */
+p {
+  font-size: inherit;
   font-family: inherit;
-  line-height: 1.7;
-  color: inherit;
-  margin-bottom: 1em;
+  line-height: inherit;
 }
 
-/* Headings inside blog posts */
-body.layout-post h1 {
-  font-size: 2.2em;
+/* Headings - markdown # -> <h1>, ## -> <h2>, etc. */
+h1 {
+  font-size: 2em;   /* biggest */
   font-weight: bold;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
 }
 
-body.layout-post h2 {
-  font-size: 1.8em;
+h2 {
+  font-size: 1.5em; /* second biggest */
   font-weight: bold;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
 }
 
-body.layout-post h3 {
-  font-size: 1.4em;
+h3 {
+  font-size: 1.25em;
   font-weight: bold;
-  margin-top: 0.8em;
-  margin-bottom: 0.4em;
 }
 
-body.layout-post h4,
-body.layout-post h5,
-body.layout-post h6 {
-  font-size: 1.1em;
+h4, h5, h6 {
+  font-size: 1em;   /* same as body text */
   font-weight: bold;
-  margin-top: 0.6em;
-  margin-bottom: 0.3em;
 }
 
-/* Lists */
-body.layout-post ul,
-body.layout-post ol {
-  margin-left: 2em;
-  padding-left: 0;
+/* Cleaner indentation for lists */
+ul, ol {
+  margin-left: 1.5em;   /* adjust spacing from the left edge */
+  padding-left: 0;      /* remove double indent */
 }
 
-body.layout-post li {
-  margin: 0.4em 0;
-}
-
-/* Images inside blog posts */
-body.layout-post img {
-  display: block;
-  margin: 1.5em auto;
-  max-width: 100%;
-  height: auto;
+li {
+  margin: 0.3em 0;      /* spacing between list items */
 }
