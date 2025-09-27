@@ -93,7 +93,7 @@ The Feature Importance Analysis provides insights into which model components dr
 
 Feature Selection Implications: The heterogeneous magnitude distribution suggests that effective safety classification could be achieved using a subset of highly-activated features, potentially enabling more efficient safety monitoring systems.
 
-## Discussion
+# Discussion
 ### Practical Implications for Safety Inference
 * Feasibility Assessment
 - Based on the comprehensive analysis, I conclude that LLM safety responses can indeed be reliably inferred from model internals:
