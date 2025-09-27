@@ -27,7 +27,7 @@ that lead to safe/unsafe LLM responses.
    a harmful LLM response would generate. If a harmful response is about to generated, it can
    be stopped so that vulnerable users with mental health issues cannot be led astay.
 
-Dataset used to train our linear probe:
+Dataset used to train linear probe:
 ![responses_labels_internals](/assets/images/responses_labels_internals.png)
 
 Monitoring output after putting model into production to predict safety of LLM responses to mental health prompts:
