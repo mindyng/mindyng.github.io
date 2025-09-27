@@ -27,6 +27,13 @@ that lead to safe/unsafe LLM responses.
    a harmful LLM response would generate. If a harmful response is about to generated, it can
    be stopped so that vulnerable users with mental health issues cannot be led astay.
 
+Dataset used to train our linear probe:
+![responses_labels_internals](/assets/images/responses_labels_internals.png)
+
+Monitoring output after putting model into production to predict safety of LLM responses to mental health prompts:
+
+![monitoring_output](/assets/images/monitoring_output.png)
+
 # Results
 
 ## Internal Representation Clustering Analysis
@@ -176,3 +183,5 @@ Together demonstrate that internal-state-based safety monitoring represents a vi
 The results suggest a paradigm shift from reactive to proactive safety measures. Rather than relying solely on output-based safety filtering that exposes vulnerable users to harmful content before intervention, practitioners can implement preventive safety measures by monitoring internal model states. This approach is particularly vital for mental health applications where even momentary exposure to harmful suggestions can have severe consequences for users in crisis.
 
 The ability to catch potentially harmful content before it reaches final output generation represents not just a technical advancement, but a fundamental improvement in the ethical deployment of AI systems for vulnerable populations. This research provides the foundation for developing AI safety systems that prioritize user protection through pre-emptive intervention rather than post-hoc content moderation.
+
+[Data and Code](https://github.com/mindyng/AI_Alignment/tree/main/projects/mental_health_mech_interp)
